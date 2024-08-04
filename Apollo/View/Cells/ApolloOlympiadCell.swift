@@ -40,7 +40,7 @@ final class ApolloOlympiadCell: UITableViewCell {
 private extension ApolloOlympiadCell {
 
     func configure() {
-        contentView.backgroundColor = nil
+        backgroundColor = .clear
         selectionStyle = .none
     }
 

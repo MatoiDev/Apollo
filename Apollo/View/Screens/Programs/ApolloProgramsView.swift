@@ -52,6 +52,7 @@ private extension ApolloProgramsView {
         tableView.separatorStyle = .none
         tableView.backgroundColor = .black
         tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundColor = .inversedLabelColor
 
         tableView.dataSource = self
         tableView.delegate = self

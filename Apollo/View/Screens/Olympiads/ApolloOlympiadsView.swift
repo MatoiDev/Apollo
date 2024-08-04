@@ -61,6 +61,7 @@ private extension ApolloOlympiadsView {
         tableView.backgroundColor = .black
         tableView.showsVerticalScrollIndicator = false
         tableView.delaysContentTouches = false
+        tableView.backgroundColor = .inversedLabelColor
 
         tableView.dataSource = self
         tableView.delegate = self

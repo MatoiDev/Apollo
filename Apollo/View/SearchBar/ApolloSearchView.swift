@@ -39,6 +39,7 @@ class ApolloSearchView: UIView {
         
         bindViewToViewModel()
         registerNotifications() // UIKeyboardLayoutGuide alternative with ios 13
+        registerCells()
     }
     
     required init?(coder: NSCoder) {
@@ -137,6 +138,11 @@ private extension ApolloSearchView {
             .store(in: &cancellables)
     }
     
+    func registerCells() -> Void {
+        tableView.register(ApolloOlympiadResultCell.self, forCellReuseIdentifier: "GroupedOlympiadCell")
+        tableView.register(ApolloUniversityResultCell.self, forCellReuseIdentifier: "UniversityCell")
+    }
+    
     func keyboardWillShow(_ notification: Notification) {
         guard let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
         let convertedFrame = self.convert(frame, from: nil)
@@ -171,25 +177,22 @@ extension ApolloSearchView: UITableViewDelegate {
     }
 
     private func cellForUniversity(at indexPath: IndexPath) -> UITableViewCell {
+        guard let cell: ApolloUniversityResultCell = tableView.dequeueReusableCell(withIdentifier: "UniversityCell", for: indexPath) as? ApolloUniversityResultCell else { return ApolloStubCell() }
+        
         let service: ApolloAPIService = ApolloAPIService.shared
         let cellViewModel: ApolloUniversityResultViewModel = ApolloUniversityResultViewModel(service: service)
         
-        let cell: ApolloUniversityResultCell = ApolloUniversityResultCell(
-            style: .default,
-            reuseIdentifier: nil,
-            university: universities[indexPath.row],
-            viewModel: cellViewModel
-        )
+        cell.configureCellWithUniversity(universities[indexPath.row], viewModel: cellViewModel)
         
         return cell
     }
 
     private func cellForOlympiad(at indexPath: IndexPath) -> UITableViewCell {
-        let cell: ApolloOlympiadResultCell = ApolloOlympiadResultCell(
-            style: .default,
-            reuseIdentifier: nil,
-            olympiad: olympiads[indexPath.row]
-        )
+        
+        guard let cell: ApolloOlympiadResultCell = tableView.dequeueReusableCell(withIdentifier: "GroupedOlympiadCell", for: indexPath) as? ApolloOlympiadResultCell else { return ApolloStubCell() }
+        
+        cell.configureWithOlympiad(olympiads[indexPath.row])
+        
         return cell
     }
     
@@ -244,12 +247,12 @@ extension ApolloSearchView: UITableViewDataSource {
         case (true, true):
             return 1
         case (false, true):
-            return min(olympiads.count, 5)
+            return olympiads.count
         case (true, false):
-            return min(universities.count, 5)
+            return universities.count
         case (false, false):
-            if section == 0 { return min(viewModel.fetched.universities.count, 5) }
-            else { return min(viewModel.fetched.olympiads.count, 5) }
+            if section == 0 { return viewModel.fetched.universities.count }
+            else { return viewModel.fetched.olympiads.count }
         }
     }
 }

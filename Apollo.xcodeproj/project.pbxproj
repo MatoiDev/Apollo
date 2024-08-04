@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C71081F961204EF5BEE832 /* ApolloProgramsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C717593E086137F2B4929D /* ApolloProgramsView.swift */; };
 		37C710EDC79854F0F0DB4A49 /* ApolloUniversitiesScreenHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */; };
 		37C712282A2B8AFCEFE9BBD1 /* ApolloUniversityAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */; };
 		37C7124A548CC37F6517DE6D /* ApolloUniversitiesScreenHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */; };
+		37C713274E1DD129C45A14D4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 37C7125FD470CEE5045B2FF1 /* README.md */; };
+		37C7135CF5AB68A937D3A6EE /* ApolloProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7115AFC4AD0A77194A78C /* ApolloProgramsViewController.swift */; };
+		37C713FD58554869A08D76BE /* ApolloOlympiadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C715D820E4BA3B25699D1B /* ApolloOlympiadCell.swift */; };
+		37C714375DD0964273625E01 /* ApolloProgramsWithConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C712EEBD9A52F1B9F59CE4 /* ApolloProgramsWithConditionView.swift */; };
 		37C71461EB452747D9F64A7C /* ApolloSocialLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */; };
 		37C7146A923D66466372A9BC /* ApolloUniversityTitleWithYearOfFoundationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */; };
 		37C715A429A27E54F6AEFABB /* ApolloLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C717A58A0C1422107F03FB /* ApolloLocationView.swift */; };
 		37C715C48ABDD8DC850C4C6A /* ApolloUniversitiesScreenHeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C715E8626C01FAA7119E45 /* ApolloUniversitiesScreenHeaderCollectionCell.swift */; };
 		37C7180D6AF73D726EA9E68A /* ApolloButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71688B787F19340E173B6 /* ApolloButtonCell.swift */; };
+		37C718B33B704FBE4FCE5D91 /* ApolloStubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71EF463B7337F1D069C86 /* ApolloStubCell.swift */; };
+		37C718D4A39D1899C260345E /* ApolloProgramsWithConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71148DF89938748FFB229 /* ApolloProgramsWithConditionViewController.swift */; };
 		37C719186FDD222F928745FD /* ApolloContactInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */; };
+		37C71918A8705EE87442C019 /* ApolloProgramsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71081567D165B87E0F774 /* ApolloProgramsViewModel.swift */; };
+		37C71989FCB1F897EE940B45 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 37C7106A9B283ADAB3355258 /* LICENSE */; };
+		37C7199FE5BC968C10231BE1 /* ApolloOlympiadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71E970B68C9D9B4688597 /* ApolloOlympiadsView.swift */; };
+		37C71B14DDD6CD700BA3E503 /* ApolloOlympiadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C710B967A008963B4F8E2A /* ApolloOlympiadsViewController.swift */; };
+		37C71D127A19348AA2B6271C /* ApolloOlympiadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7125442BB87E645FB7E22 /* ApolloOlympiadsViewModel.swift */; };
 		37C71E9C77EC6E9AD3EFE803 /* ApolloStretchyTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */; };
 		37C71F9C7822B63707CA9749 /* ApolloTableViewSectionFooterWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71D69DCEBCBF31BECF334 /* ApolloTableViewSectionFooterWithTextField.swift */; };
+		37C71FE2EE1763013003D081 /* ApolloProgramHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7119C8AB64D84E046E125 /* ApolloProgramHeaderCell.swift */; };
 		950692D42C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D32C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift */; };
 		950692D62C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D52C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift */; };
 		950692D92C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D82C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift */; };
@@ -25,10 +38,8 @@
 		950692DD2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692DC2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift */; };
 		950692DF2C2B519B00E58AC5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692DE2C2B519B00E58AC5 /* String+Extensions.swift */; };
 		9518CD2F2C11DED3005EC560 /* ApolloSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518CD2E2C11DED3005EC560 /* ApolloSearchController.swift */; };
-		952470D82C3AB69100C8B0DA /* ApolloProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */; };
-		952470DA2C3AB6A000C8B0DA /* ApolloProgramsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */; };
-		952470DC2C3ABAF000C8B0DA /* ApolloProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */; };
-		952470DE2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */; };
+		952470DC2C3ABAF000C8B0DA /* ApolloProgramWithConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DB2C3ABAF000C8B0DA /* ApolloProgramWithConditionCell.swift */; };
+		952470DE2C3ABBC700C8B0DA /* ApolloProgramWithConditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DD2C3ABBC700C8B0DA /* ApolloProgramWithConditionViewModel.swift */; };
 		952470E02C3ACEF800C8B0DA /* ApolloProfileConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DF2C3ACEF800C8B0DA /* ApolloProfileConditionView.swift */; };
 		9550F75E2C1C00A1008CCECB /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9550F75D2C1C00A1008CCECB /* TestingAppDelegate.swift */; };
 		9550F7602C1C010B008CCECB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9550F75F2C1C010B008CCECB /* main.swift */; };
@@ -60,6 +71,7 @@
 		957DE9E62C2C807A009AD77E /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957DE9E52C2C807A009AD77E /* ProfileData.swift */; };
 		957DE9E82C2C9A63009AD77E /* ApolloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957DE9E72C2C9A63009AD77E /* ApolloButton.swift */; };
 		95825AAB2C14817F00886033 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95825AAA2C14817F00886033 /* UIColor+Extensions.swift */; };
+		959A57392C5ABB8400F21CA0 /* ApolloProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A57382C5ABB8400F21CA0 /* ApolloProgramCell.swift */; };
 		959A92372C2C3886008D6104 /* ApolloProfilesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A92362C2C3886008D6104 /* ApolloProfilesCollectionView.swift */; };
 		959A923A2C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A92392C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift */; };
 		959A923D2C2C4566008D6104 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A923C2C2C4566008D6104 /* UIImage+Extensions.swift */; };
@@ -79,6 +91,7 @@
 		95CC71DC2C3987A700090174 /* ApolloUniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */; };
 		95D776F52C29A41000506B33 /* GroupedOlympiad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D776F42C29A41000506B33 /* GroupedOlympiad.swift */; };
 		95E579562C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */; };
+		95F1AADF2C5FCF76009ACA52 /* ApolloAuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1AADE2C5FCF76009ACA52 /* ApolloAuthorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,16 +112,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37C7106A9B283ADAB3355258 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		37C71081567D165B87E0F774 /* ApolloProgramsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramsViewModel.swift; sourceTree = "<group>"; };
 		37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversityAddressCell.swift; sourceTree = "<group>"; };
+		37C710B967A008963B4F8E2A /* ApolloOlympiadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadsViewController.swift; sourceTree = "<group>"; };
+		37C71148DF89938748FFB229 /* ApolloProgramsWithConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramsWithConditionViewController.swift; sourceTree = "<group>"; };
+		37C7115AFC4AD0A77194A78C /* ApolloProgramsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramsViewController.swift; sourceTree = "<group>"; };
+		37C7119C8AB64D84E046E125 /* ApolloProgramHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramHeaderCell.swift; sourceTree = "<group>"; };
 		37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCell.swift; sourceTree = "<group>"; };
+		37C7125442BB87E645FB7E22 /* ApolloOlympiadsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadsViewModel.swift; sourceTree = "<group>"; };
+		37C7125FD470CEE5045B2FF1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		37C712EEBD9A52F1B9F59CE4 /* ApolloProgramsWithConditionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramsWithConditionView.swift; sourceTree = "<group>"; };
+		37C715D820E4BA3B25699D1B /* ApolloOlympiadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadCell.swift; sourceTree = "<group>"; };
 		37C715E8626C01FAA7119E45 /* ApolloUniversitiesScreenHeaderCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCollectionCell.swift; sourceTree = "<group>"; };
 		37C71688B787F19340E173B6 /* ApolloButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloButtonCell.swift; sourceTree = "<group>"; };
 		37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloSocialLinkCell.swift; sourceTree = "<group>"; };
+		37C717593E086137F2B4929D /* ApolloProgramsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloProgramsView.swift; sourceTree = "<group>"; };
 		37C717A58A0C1422107F03FB /* ApolloLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloLocationView.swift; sourceTree = "<group>"; };
 		37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloStretchyTableHeaderView.swift; sourceTree = "<group>"; };
 		37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCellViewModel.swift; sourceTree = "<group>"; };
 		37C71D69DCEBCBF31BECF334 /* ApolloTableViewSectionFooterWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloTableViewSectionFooterWithTextField.swift; sourceTree = "<group>"; };
 		37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloContactInfoCell.swift; sourceTree = "<group>"; };
+		37C71E970B68C9D9B4688597 /* ApolloOlympiadsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadsView.swift; sourceTree = "<group>"; };
+		37C71EF463B7337F1D069C86 /* ApolloStubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloStubCell.swift; sourceTree = "<group>"; };
 		37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversityTitleWithYearOfFoundationCell.swift; sourceTree = "<group>"; };
 		950692D32C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadInfoViewController.swift; sourceTree = "<group>"; };
 		950692D52C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadInfoView.swift; sourceTree = "<group>"; };
@@ -117,10 +143,8 @@
 		950692DC2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortOlympiadInfo.swift; sourceTree = "<group>"; };
 		950692DE2C2B519B00E58AC5 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		9518CD2E2C11DED3005EC560 /* ApolloSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSearchController.swift; sourceTree = "<group>"; };
-		952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramsViewController.swift; sourceTree = "<group>"; };
-		952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramsView.swift; sourceTree = "<group>"; };
-		952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramCell.swift; sourceTree = "<group>"; };
-		952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramCellViewModel.swift; sourceTree = "<group>"; };
+		952470DB2C3ABAF000C8B0DA /* ApolloProgramWithConditionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramWithConditionCell.swift; sourceTree = "<group>"; };
+		952470DD2C3ABBC700C8B0DA /* ApolloProgramWithConditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramWithConditionViewModel.swift; sourceTree = "<group>"; };
 		952470DF2C3ACEF800C8B0DA /* ApolloProfileConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileConditionView.swift; sourceTree = "<group>"; };
 		9550F75D2C1C00A1008CCECB /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		9550F75F2C1C010B008CCECB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -156,6 +180,7 @@
 		957DE9E52C2C807A009AD77E /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		957DE9E72C2C9A63009AD77E /* ApolloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloButton.swift; sourceTree = "<group>"; };
 		95825AAA2C14817F00886033 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		959A57382C5ABB8400F21CA0 /* ApolloProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramCell.swift; sourceTree = "<group>"; };
 		959A92362C2C3886008D6104 /* ApolloProfilesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfilesCollectionView.swift; sourceTree = "<group>"; };
 		959A92392C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfilesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		959A923C2C2C4566008D6104 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
@@ -175,6 +200,7 @@
 		95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityCell.swift; sourceTree = "<group>"; };
 		95D776F42C29A41000506B33 /* GroupedOlympiad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedOlympiad.swift; sourceTree = "<group>"; };
 		95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityInfoViewModel.swift; sourceTree = "<group>"; };
+		95F1AADE2C5FCF76009ACA52 /* ApolloAuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAuthorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +228,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C71B61553DCE73FC76A96F /* Olympiads */ = {
+			isa = PBXGroup;
+			children = (
+				37C710B967A008963B4F8E2A /* ApolloOlympiadsViewController.swift */,
+				37C71E970B68C9D9B4688597 /* ApolloOlympiadsView.swift */,
+			);
+			path = Olympiads;
+			sourceTree = "<group>";
+		};
+		37C71F01F5D270AB196C230F /* ProgramsWithCondition */ = {
+			isa = PBXGroup;
+			children = (
+				37C712EEBD9A52F1B9F59CE4 /* ApolloProgramsWithConditionView.swift */,
+				37C71148DF89938748FFB229 /* ApolloProgramsWithConditionViewController.swift */,
+			);
+			path = ProgramsWithCondition;
+			sourceTree = "<group>";
+		};
 		950692D22C2AE84200E58AC5 /* OlympiadInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,8 +267,8 @@
 		952470D62C3AB66800C8B0DA /* Programs */ = {
 			isa = PBXGroup;
 			children = (
-				952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */,
-				952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */,
+				37C7115AFC4AD0A77194A78C /* ApolloProgramsViewController.swift */,
+				37C717593E086137F2B4929D /* ApolloProgramsView.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -275,12 +319,16 @@
 				957DE9E32C2C7FE4009AD77E /* ApolloProfileCell.swift */,
 				95AB6C5A2C37FB8A00B8BCD9 /* ApolloTitleCell.swift */,
 				95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */,
-				952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */,
+				952470DB2C3ABAF000C8B0DA /* ApolloProgramWithConditionCell.swift */,
 				37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */,
 				37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */,
 				37C71688B787F19340E173B6 /* ApolloButtonCell.swift */,
 				37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */,
 				37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */,
+				37C71EF463B7337F1D069C86 /* ApolloStubCell.swift */,
+				959A57382C5ABB8400F21CA0 /* ApolloProgramCell.swift */,
+				37C715D820E4BA3B25699D1B /* ApolloOlympiadCell.swift */,
+				37C7119C8AB64D84E046E125 /* ApolloProgramHeaderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -292,6 +340,8 @@
 				957D3FC22C10B546000B5525 /* ApolloTests */,
 				957D3FCC2C10B546000B5525 /* ApolloUITests */,
 				957D3FAA2C10B545000B5525 /* Products */,
+				37C7125FD470CEE5045B2FF1 /* README.md */,
+				37C7106A9B283ADAB3355258 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -368,11 +418,13 @@
 				95C0D6202C2057E80031D198 /* ApolloSearchViewModel.swift */,
 				95A5346C2C233BDD00306276 /* ApolloUniversityCellViewModel.swift */,
 				95CC71D92C39603F00090174 /* ApolloProfileInfoViewModel.swift */,
-				952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */,
+				952470DD2C3ABBC700C8B0DA /* ApolloProgramWithConditionViewModel.swift */,
 				95AD0BAF2C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift */,
 				95AD0BB12C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift */,
 				37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */,
 				95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */,
+				37C71081567D165B87E0F774 /* ApolloProgramsViewModel.swift */,
+				37C7125442BB87E645FB7E22 /* ApolloOlympiadsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -406,6 +458,8 @@
 				95825AAC2C1488C900886033 /* Main */,
 				95825AAD2C1488E300886033 /* Universities */,
 				95825AAE2C1488ED00886033 /* Settings */,
+				37C71F01F5D270AB196C230F /* ProgramsWithCondition */,
+				37C71B61553DCE73FC76A96F /* Olympiads */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -510,6 +564,7 @@
 				37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */,
 				37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */,
 				37C717A58A0C1422107F03FB /* ApolloLocationView.swift */,
+				95F1AADE2C5FCF76009ACA52 /* ApolloAuthorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -638,6 +693,7 @@
 			files = (
 				957D3FB62C10B546000B5525 /* Assets.xcassets in Resources */,
 				957D3FB92C10B546000B5525 /* Base in Resources */,
+				37C71989FCB1F897EE940B45 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +728,7 @@
 				9557ED222C21D479009F0F98 /* ApolloOlympiadResultCell.swift in Sources */,
 				95AD0BB02C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift in Sources */,
 				957D3FE62C10C9A0000B5525 /* ApolloResources.swift in Sources */,
+				95F1AADF2C5FCF76009ACA52 /* ApolloAuthorView.swift in Sources */,
 				95825AAB2C14817F00886033 /* UIColor+Extensions.swift in Sources */,
 				957D3FAD2C10B545000B5525 /* AppDelegate.swift in Sources */,
 				9554AE6F2C1CB71800BE3E82 /* University.swift in Sources */,
@@ -695,7 +752,7 @@
 				9554AE632C1C9EC200BE3E82 /* UITextField+Combine.swift in Sources */,
 				9557ED202C21D463009F0F98 /* ApolloUniversityResultCell.swift in Sources */,
 				957D3FF62C10E160000B5525 /* ApolloUniversitiesScreen.swift in Sources */,
-				952470DC2C3ABAF000C8B0DA /* ApolloProgramCell.swift in Sources */,
+				952470DC2C3ABAF000C8B0DA /* ApolloProgramWithConditionCell.swift in Sources */,
 				957D3FAF2C10B545000B5525 /* SceneDelegate.swift in Sources */,
 				957DE9E82C2C9A63009AD77E /* ApolloButton.swift in Sources */,
 				952470E02C3ACEF800C8B0DA /* ApolloProfileConditionView.swift in Sources */,
@@ -705,17 +762,16 @@
 				950692DB2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift in Sources */,
 				9554AE662C1CA32C00BE3E82 /* ApolloAPIService.swift in Sources */,
 				95AD0BB22C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift in Sources */,
-				952470D82C3AB69100C8B0DA /* ApolloProgramsViewController.swift in Sources */,
 				957DE9E42C2C7FE4009AD77E /* ApolloProfileCell.swift in Sources */,
+				959A57392C5ABB8400F21CA0 /* ApolloProgramCell.swift in Sources */,
 				95D776F52C29A41000506B33 /* GroupedOlympiad.swift in Sources */,
-				952470DE2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift in Sources */,
+				952470DE2C3ABBC700C8B0DA /* ApolloProgramWithConditionViewModel.swift in Sources */,
 				95CC71DC2C3987A700090174 /* ApolloUniversityCell.swift in Sources */,
 				95A5346D2C233BDD00306276 /* ApolloUniversityCellViewModel.swift in Sources */,
 				9550F7602C1C010B008CCECB /* main.swift in Sources */,
 				957D3FE82C10D9E9000B5525 /* ApolloNavigationController.swift in Sources */,
 				957D3FEC2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift in Sources */,
 				95C0D6232C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift in Sources */,
-				952470DA2C3AB6A000C8B0DA /* ApolloProgramsView.swift in Sources */,
 				957D3FF82C10E172000B5525 /* ApolloSettingsScreen.swift in Sources */,
 				37C7124A548CC37F6517DE6D /* ApolloUniversitiesScreenHeaderCell.swift in Sources */,
 				37C710EDC79854F0F0DB4A49 /* ApolloUniversitiesScreenHeaderCellViewModel.swift in Sources */,
@@ -728,6 +784,18 @@
 				37C71461EB452747D9F64A7C /* ApolloSocialLinkCell.swift in Sources */,
 				37C712282A2B8AFCEFE9BBD1 /* ApolloUniversityAddressCell.swift in Sources */,
 				37C715A429A27E54F6AEFABB /* ApolloLocationView.swift in Sources */,
+				37C718B33B704FBE4FCE5D91 /* ApolloStubCell.swift in Sources */,
+				37C714375DD0964273625E01 /* ApolloProgramsWithConditionView.swift in Sources */,
+				37C718D4A39D1899C260345E /* ApolloProgramsWithConditionViewController.swift in Sources */,
+				37C7135CF5AB68A937D3A6EE /* ApolloProgramsViewController.swift in Sources */,
+				37C71081F961204EF5BEE832 /* ApolloProgramsView.swift in Sources */,
+				37C71918A8705EE87442C019 /* ApolloProgramsViewModel.swift in Sources */,
+				37C71B14DDD6CD700BA3E503 /* ApolloOlympiadsViewController.swift in Sources */,
+				37C7199FE5BC968C10231BE1 /* ApolloOlympiadsView.swift in Sources */,
+				37C71D127A19348AA2B6271C /* ApolloOlympiadsViewModel.swift in Sources */,
+				37C713FD58554869A08D76BE /* ApolloOlympiadCell.swift in Sources */,
+				37C71FE2EE1763013003D081 /* ApolloProgramHeaderCell.swift in Sources */,
+				37C713274E1DD129C45A14D4 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

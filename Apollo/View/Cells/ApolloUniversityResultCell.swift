@@ -12,7 +12,7 @@ import Combine
 final class ApolloUniversityResultCell: UITableViewCell {
     
     // Properties
-    private let university: University
+    private var university: University?
     
     // Elements
     private let container: UIView = UIView()
@@ -22,13 +22,10 @@ final class ApolloUniversityResultCell: UITableViewCell {
     private let specialitiesLabel: UILabel = UILabel()
     
     // Bindings
-    private let viewModel: ApolloUniversityResultViewModel
+    private var viewModel: ApolloUniversityResultViewModel?
     private var subscribers: Set<AnyCancellable> = Set<AnyCancellable>()
 
-    init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, university: University, viewModel: ApolloUniversityResultViewModel) {
-        self.university = university
-        self.viewModel = viewModel
-        
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         configure()
@@ -37,8 +34,14 @@ final class ApolloUniversityResultCell: UITableViewCell {
         configureNameLabel()
         configureCityLabel()
         configureSpecialitiesLabel()
+    }
+    
+    func configureCellWithUniversity(_ university: University, viewModel: ApolloUniversityResultViewModel) -> Void {
+        self.university = university
+        self.viewModel = viewModel
         
         bindViewToViewModel()
+        updateCell()
     }
     
     required init?(coder: NSCoder) {
@@ -51,10 +54,10 @@ private extension ApolloUniversityResultCell {
     
     func bindViewToViewModel() -> Void {
         Task {
-            await viewModel.getFacultiesFor(university: university.id)
+            await viewModel?.getFacultiesFor(university: university!.id)
         }
         
-        viewModel.faculties
+        viewModel?.faculties
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 if case let .failure(error) = completion { // TODO: Допилить
@@ -89,7 +92,6 @@ private extension ApolloUniversityResultCell {
     func configureLogoImageView() -> Void {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         logoImageView.contentMode = .scaleAspectFit
-        logoImageView.image = UIImage(named: "\(university.id)Logo")
         
         addSubview(logoImageView)
         NSLayoutConstraint.activate([
@@ -102,7 +104,6 @@ private extension ApolloUniversityResultCell {
     
     func configureNameLabel() -> Void {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.text = university.name
         nameLabel.font = .systemFont(ofSize: 16.0, weight: .medium)
         nameLabel.minimumScaleFactor = 0.8
         nameLabel.textColor = .label
@@ -120,7 +121,6 @@ private extension ApolloUniversityResultCell {
     
     func configureCityLabel() -> Void {
         cityLabel.translatesAutoresizingMaskIntoConstraints = false
-        cityLabel.text = university.address.city
         cityLabel.font = .systemFont(ofSize: 12.0, weight: .regular)
         cityLabel.minimumScaleFactor = 0.01
         cityLabel.textColor = .secondaryLabel
@@ -149,5 +149,11 @@ private extension ApolloUniversityResultCell {
             specialitiesLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.0),
             specialitiesLabel.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -16.0)
         ])
+    }
+    
+    func updateCell() -> Void {
+        cityLabel.text = university!.address.city
+        nameLabel.text = university!.name
+        logoImageView.image = UIImage(named: "\(university!.id)Logo")
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 final class ApolloOlympiadResultCell: UITableViewCell {
 
     // Properties
-    private let olympiad: GroupedOlympiad
+    private var olympiad: GroupedOlympiad?
     
     // Elements
     private let container: UIView = UIView()
@@ -19,8 +19,7 @@ final class ApolloOlympiadResultCell: UITableViewCell {
     private let profileLabel: UILabel = UILabel()
     private let conditionLabel: UILabel = UILabel()
 
-    init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, olympiad: GroupedOlympiad) {
-        self.olympiad = olympiad
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         configure()
@@ -29,11 +28,15 @@ final class ApolloOlympiadResultCell: UITableViewCell {
         configureProfileLabel()
         configureConditionLabel()
     }
+    
+    func configureWithOlympiad(_ olympiad: GroupedOlympiad) -> Void {
+        self.olympiad = olympiad
+        updateCell()
+    }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 
@@ -60,7 +63,6 @@ private extension ApolloOlympiadResultCell {
     
     func configureNameLabel() -> Void {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.text = olympiad.name
         nameLabel.font = .systemFont(ofSize: 16.0, weight: .medium)
         nameLabel.minimumScaleFactor = 1
         nameLabel.textColor = .label
@@ -78,11 +80,6 @@ private extension ApolloOlympiadResultCell {
     
     func configureProfileLabel() -> Void {
         profileLabel.translatesAutoresizingMaskIntoConstraints = false
-        if olympiad.profiles.count == 1 {
-            profileLabel.text = "\(olympiad.profiles.first!.key)"
-        } else {
-            profileLabel.text = String.profiles(olympiad.profiles.count)
-        }
         profileLabel.font = .systemFont(ofSize: 12.0, weight: .regular)
         profileLabel.minimumScaleFactor = 0.01
         profileLabel.textColor = .secondaryLabel
@@ -104,13 +101,20 @@ private extension ApolloOlympiadResultCell {
         conditionLabel.textColor = .secondaryLabel
         conditionLabel.adjustsFontSizeToFitWidth = true
         
-        if olympiad.score.lowercased() != "nil" { conditionLabel.text = "Подтверждение • \(olympiad.score)" }
-        else { conditionLabel.text = "Не требует подтверждения" }
-        
         container.addSubview(conditionLabel)
         NSLayoutConstraint.activate([
             conditionLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.0),
             conditionLabel.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -16.0)
         ])
+    }
+    
+    func updateCell() -> Void {
+        nameLabel.text = olympiad!.name
+        
+        if olympiad!.profiles.count == 1 { profileLabel.text = "\(olympiad!.profiles.first!.key)" }
+        else { profileLabel.text = String.profiles(olympiad!.profiles.count) }
+        
+        if olympiad!.score.lowercased() != "nil" { conditionLabel.text = "Подтверждение • \(olympiad!.score)" }
+        else { conditionLabel.text = "Не требует подтверждения" }
     }
 }

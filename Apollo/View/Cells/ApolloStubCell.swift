@@ -39,7 +39,7 @@ private extension ApolloStubCell {
 
     func configureContainer() -> Void {
         container.translatesAutoresizingMaskIntoConstraints = false
-        container.backgroundColor = .secondarySystemFill
+        container.backgroundColor = .apolloCellBackgroundColor
         container.layer.cornerRadius = 24.0
 
         contentView.addSubview(container)

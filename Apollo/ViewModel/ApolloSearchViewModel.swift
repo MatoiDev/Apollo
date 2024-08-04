@@ -58,7 +58,13 @@ extension ApolloSearchViewModel {
         do {
             let olympiads = try await service.fetch(Dictionary<String, GroupedOlympiad>.self, usingURL:  "\(service.temporaryHostingURL)/olympiads/grouped")
             return olympiads.values.filter { olympiad in
-                olympiad.name.lowercased().contains(searchText.lowercased()) 
+                if olympiad.name.lowercased().contains(searchText.lowercased()) { return true }
+                for word in searchText.lowercased().components(separatedBy: " ") {
+                    for profile in olympiad.profiles.keys {
+                        if profile.lowercased().contains(word) { return true }
+                    }
+                }
+                return false
             }
         } catch {
             fetched.olympiads = []

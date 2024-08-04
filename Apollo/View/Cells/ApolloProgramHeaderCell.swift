@@ -40,7 +40,7 @@ final class ApolloProgramHeaderCell: UITableViewCell {
 private extension ApolloProgramHeaderCell {
 
     func configure() {
-        contentView.backgroundColor = nil
+        backgroundColor = .clear
         selectionStyle = .none
     }
 
