@@ -7,8 +7,8 @@
 
 import XCTest
 
-@testable import Apollo
 
+@testable import Apollo
 
 final class ApolloAPIServiceTests: XCTestCase {
     let staticURL: String = "https://matoidev.pythonanywhere.com"
@@ -64,5 +64,4 @@ final class ApolloAPIServiceTests: XCTestCase {
             XCTFail(error.localizedDescription)
         }
     }
-
 }

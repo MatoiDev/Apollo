@@ -12,6 +12,8 @@ enum SocialLinkType {
     case ok
     case telegram
 }
+
+
 final class ApolloSocialLinkCell: UIView {
 
     // Properties
@@ -48,7 +50,9 @@ final class ApolloSocialLinkCell: UIView {
     }
 }
 
+
 private extension ApolloSocialLinkCell {
+    
     func configure() -> Void {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .apolloButtonBackgroundColor

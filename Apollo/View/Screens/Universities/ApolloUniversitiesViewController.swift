@@ -7,11 +7,11 @@
 
 import UIKit
 
+
 protocol ApolloUniversitiesViewControllerPresenter: AnyObject {
-    
     func present(with: University) -> Void
-    
 }
+
 
 final class ApolloUniversitiesViewController: UIViewController {
 
@@ -35,6 +35,7 @@ private extension ApolloUniversitiesViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
+
 
 extension ApolloUniversitiesViewController: ApolloUniversitiesViewControllerPresenter {
     func present(with university: University) -> Void {

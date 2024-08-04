@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct GroupedOlympiad: Decodable {
     let name: String
     let profiles: [String: [String: [String]]]

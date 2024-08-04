@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct ShortOlympiadInfo {
     let name: String
     let profile: String

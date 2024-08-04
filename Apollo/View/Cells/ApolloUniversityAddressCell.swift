@@ -9,16 +9,15 @@ final class ApolloUniversityAddressCell: UITableViewCell {
 
     // Properties
     private let university: University
+    private lazy var address: String = {
+        "\(university.address.city), \(university.address.street),\n\(university.address.postCode)"
+    }()
 
     // Elements
     private let leftImageView: UIImageView = UIImageView()
     private let titleLabel: UILabel = UILabel()
     private let addressLabel: UILabel = UILabel()
     private lazy var locationView: ApolloLocationView = ApolloLocationView(university: university)
-
-    private lazy var address: String = {
-        "\(university.address.city), \(university.address.street),\n\(university.address.postCode)"
-    }()
 
     init(style: CellStyle = .default, reuseIdentifier: String? = nil, university: University) {
         self.university = university

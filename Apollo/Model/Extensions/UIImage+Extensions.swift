@@ -7,7 +7,9 @@
 
 import UIKit
 
+
 extension UIImage {
+    
     static func solidFill(with color: UIColor) -> UIImage {
         let lightModeImage = Self.generatePixel(ofColor: color, userInterfaceStyle: .light)
         let darkModeImage = Self.generatePixel(ofColor: color, userInterfaceStyle: .dark)

@@ -7,16 +7,18 @@
 
 import UIKit
 
+
 final class ApolloTitleCell: UITableViewCell {
-    
-    private let label: UILabel = UILabel()
-    private let title: String
-    
+        
     // Properties
+    private let title: String
     private let fontSize: CGFloat
     private let verticalPadding: CGFloat
     private let horizontalPadding: CGFloat
     private let fontWeight: UIFont.Weight
+    
+    // Elements
+    private let label: UILabel = UILabel()
     
     init(style: UITableViewCell.CellStyle = .default,
          reuseIdentifier: String? = nil,
@@ -41,6 +43,7 @@ final class ApolloTitleCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloTitleCell {
     

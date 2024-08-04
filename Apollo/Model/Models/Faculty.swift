@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Faculty: Decodable {
     let id: String
     let universityId: String

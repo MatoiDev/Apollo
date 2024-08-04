@@ -13,6 +13,7 @@ enum ApolloButtonStyle {
     case outlined
 }
 
+
 final class ApolloButton: UIButton {
     
     private let highlightDuration: TimeInterval
@@ -47,6 +48,7 @@ final class ApolloButton: UIButton {
         }
     }
 }
+
 
 private extension ApolloButton {
     func configure() -> Void {

@@ -8,11 +8,12 @@
 import UIKit
 import SafariServices
 
+
 protocol ApolloOlympiadInfoViewControllerPresenter: AnyObject {
-    func present(with olympiad: ShortOlympiadInfo) -> Void
     func present(with olympiadURLString: String) -> Void
     func present(with olympiad: GroupedOlympiad, profile: ProfileData) -> Void
 }
+
 
 final class ApolloOlympiadInfoViewController: UIViewController {
 
@@ -34,6 +35,7 @@ final class ApolloOlympiadInfoViewController: UIViewController {
     }
 }
 
+
 private extension ApolloOlympiadInfoViewController {
     
     func setupView() -> Void {
@@ -43,10 +45,8 @@ private extension ApolloOlympiadInfoViewController {
     }
 }
 
+
 extension ApolloOlympiadInfoViewController: ApolloOlympiadInfoViewControllerPresenter {
-    func present(with olympiad: ShortOlympiadInfo) {
-        print(olympiad.name)
-    }
     
     func present(with olympiad: GroupedOlympiad, profile: ProfileData) {
         let vc = ApolloProfileInfoViewController(olympiad: olympiad, profile: profile)

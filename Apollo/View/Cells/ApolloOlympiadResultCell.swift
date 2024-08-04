@@ -7,16 +7,17 @@
 
 import UIKit
 
+
 final class ApolloOlympiadResultCell: UITableViewCell {
+
+    // Properties
+    private let olympiad: GroupedOlympiad
     
     // Elements
     private let container: UIView = UIView()
     private let nameLabel: UILabel = UILabel()
     private let profileLabel: UILabel = UILabel()
     private let conditionLabel: UILabel = UILabel()
-    
-    // Properties
-    private let olympiad: GroupedOlympiad
 
     init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, olympiad: GroupedOlympiad) {
         self.olympiad = olympiad
@@ -28,12 +29,13 @@ final class ApolloOlympiadResultCell: UITableViewCell {
         configureProfileLabel()
         configureConditionLabel()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
 }
+
 
 private extension ApolloOlympiadResultCell {
     

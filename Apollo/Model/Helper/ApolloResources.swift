@@ -31,7 +31,6 @@ public enum ApolloResources {
             static let mainPage: UIImage = UIImage(named: "house")!
             static let universitiesPage: UIImage = UIImage(named: "building.2")!
             static let settings: UIImage = UIImage(named: "gearshape")!
-
         }
 
         enum Social {
@@ -47,7 +46,6 @@ public enum ApolloResources {
         
         enum MainView {
             static let backgroundImage: UIImage = UIImage(named: "Apollo")!
-            
             static let searchFieldLeadingImage: UIImage = UIImage(systemName: "magnifyingglass", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
         }
 
@@ -87,5 +85,4 @@ public enum ApolloResources {
             static let pin: UIImage = UIImage(systemName: "mappin.and.ellipse")!
         }
     }
-   
 }

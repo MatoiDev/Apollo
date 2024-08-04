@@ -8,18 +8,19 @@
 import UIKit
 import Combine
 
-final class ApolloUniversitiesScreen: UIView {
 
-    // Bindings
-    private let viewModel: ApolloUniversitiesScreenViewModel
-    private var subscribers: Set<AnyCancellable> = Set<AnyCancellable>()
+final class ApolloUniversitiesScreen: UIView {
+    
+    // Properties
+    private var universities: [University] = []
 
     // Elements
     private let tableView: UITableView = UITableView()
     private lazy var footerView: ApolloTableViewSectionFooterWithTextField = ApolloTableViewSectionFooterWithTextField(frame: CGRectMake(0, 0, tableView.bounds.width, 44), title: "Universities")
-
-    // Properties
-    private var universities: [University] = []
+    
+    // Bindings
+    private let viewModel: ApolloUniversitiesScreenViewModel
+    private var subscribers: Set<AnyCancellable> = Set<AnyCancellable>()
 
     weak var presenter: ApolloUniversitiesViewControllerPresenter?
 
@@ -38,6 +39,7 @@ final class ApolloUniversitiesScreen: UIView {
     }
 }
 
+
 private extension ApolloUniversitiesScreen {
 
     func bindViewToViewModel() -> Void {
@@ -45,7 +47,6 @@ private extension ApolloUniversitiesScreen {
                 .debounce(for: 0.5, scheduler: RunLoop.main)
                 .sink { [weak viewModel] textInput in
                     guard let viewModel else { return }
-                    print(textInput)
                     viewModel.searchText = textInput
                 }
                 .store(in: &subscribers)
@@ -85,10 +86,12 @@ private extension ApolloUniversitiesScreen {
     }
 }
 
+
 extension ApolloUniversitiesScreen: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 { return 1 }
-        return universities.count
+        return universities.isEmpty ? 3 : universities.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -101,6 +104,9 @@ extension ApolloUniversitiesScreen: UITableViewDataSource {
 
             return cell
         case 1:
+            guard !universities.isEmpty else {
+                return ApolloStubCell()
+            }
             let vm: ApolloUniversityCellViewModel = ApolloUniversityCellViewModel(service: service)
             let cell: ApolloUniversityCell = ApolloUniversityCell(
                     style: .default,
@@ -121,6 +127,7 @@ extension ApolloUniversitiesScreen: UITableViewDataSource {
 
 extension ApolloUniversitiesScreen: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section != 0, !universities.isEmpty else { return }
         let universityToPresent: University = universities[indexPath.row]
 
         presenter?.present(with: universityToPresent)
@@ -153,12 +160,14 @@ extension ApolloUniversitiesScreen: UITableViewDelegate {
     }
 }
 
+
 extension ApolloUniversitiesScreen: UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         collapseKeyboard()
         return true
     }
 }
+
 
 extension ApolloUniversitiesScreen: ApolloSearchControllerDelegate {
     func collapseKeyboard() {

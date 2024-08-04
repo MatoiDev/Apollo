@@ -8,8 +8,10 @@
 import UIKit
 import Combine
 
+
 final class ApolloMainScreen: UIView {
 
+    // Elements
     private let apolloLabel: UILabel = UILabel()
     private let quoteLabel: UILabel = UILabel()
     private let backgroundImageView: UIImageView = UIImageView()
@@ -37,6 +39,7 @@ final class ApolloMainScreen: UIView {
     }
     
 }
+
 
 private extension ApolloMainScreen {
     

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 enum ProfileCondition {
     enum AwardeeType: String {
         case winner = "Победитель"
@@ -22,12 +23,16 @@ enum ProfileCondition {
     case subject(_ subject: String, _ points: String)
 }
 
+
 final class ApolloProfileConditionView: UIView {
     
+    // Properties
+    private let condition: ProfileCondition
+    
+    // Elements
+    private let subtitleLabel: UILabel = UILabel()
     private var titleLabel: UILabel?
     private var imageView: UIImageView?
-    private let subtitleLabel: UILabel = UILabel()
-    private let condition: ProfileCondition
     
     init(frame: CGRect = .zero, condition: ProfileCondition) {
         self.condition = condition
@@ -55,8 +60,8 @@ private extension ApolloProfileConditionView {
     
     func configureTitleLabel() -> Void {
         guard !withoutEntranceTests else { return }
-        titleLabel = UILabel()
         
+        titleLabel = UILabel()
         titleLabel!.translatesAutoresizingMaskIntoConstraints = false
         titleLabel!.text = titleForCondition
         titleLabel!.font = .systemFont(ofSize: 27.0, weight: .bold)
@@ -76,7 +81,6 @@ private extension ApolloProfileConditionView {
     
     func configureImageView() -> Void {
         imageView = UIImageView()
-        
         imageView!.translatesAutoresizingMaskIntoConstraints = false
         imageView!.image = imageForCondition
         imageView!.tintColor = .secondaryLabel
@@ -92,7 +96,6 @@ private extension ApolloProfileConditionView {
     }
     
     func configureSubtitleLabel() -> Void {
-
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.text = subtitleForBenefit
         subtitleLabel.font = .systemFont(ofSize: 10, weight: .medium)
@@ -139,7 +142,6 @@ private extension ApolloProfileConditionView {
     }
     
     var imageForCondition: UIImage {
-        
         switch condition {
         case .awardee(let type):
             return type == .medalist ? ApolloResources.Images.ApolloCondition.medalist : ApolloResources.Images.ApolloCondition.winner

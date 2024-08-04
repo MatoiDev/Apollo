@@ -6,6 +6,7 @@ import Foundation
 import UIKit
 import MapKit
 
+
 final class ApolloLocationView: UIView {
 
     // Properties
@@ -26,6 +27,7 @@ final class ApolloLocationView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloLocationView {
 
@@ -52,10 +54,12 @@ private extension ApolloLocationView {
     func setRegion(latitude: Double, longitude: Double) {
         let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 250, longitudinalMeters: 250)
+        
         mapView.setRegion(region, animated: true)
 
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
+        
         mapView.addAnnotation(annotation)
     }
 }

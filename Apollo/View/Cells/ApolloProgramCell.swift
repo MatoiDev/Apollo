@@ -2,36 +2,38 @@
 //  ApolloProgramCell.swift
 //  Apollo
 //
-//  Created by Matoi on 07.07.2024.
+//  Created by Matoi on 31.07.2024.
 //
 
+import Foundation
 import UIKit
-import Combine
 
 final class ApolloProgramCell: UITableViewCell {
-    // Properties
-    private let olympiad: Olympiad
     
+    // Properties
+    private let program: Faculty
+    private lazy var olympiadsCount: String = { String.olympiads(program.olympiads.count) }()
+
     // Elements
     private let container: UIView = UIView()
     private let titleLabel: UILabel = UILabel()
-    private let conditionStackView: UIStackView = UIStackView()
-    private var awardeeView: ApolloProfileConditionView!
-    private var gradeView: ApolloProfileConditionView!
-    private var subjectView: ApolloProfileConditionView!
+    private let olympiadsBubble: UIView = UIView()
+    private let fakeExtendButton: UIView = UIView()
+    private let olympiadsLabel: UILabel = UILabel()
+    private let chevronImage: UIImageView = UIImageView()
 
-
-    init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, olympiad: Olympiad) {
-        self.olympiad = olympiad
+    init(style: CellStyle = .default, reuseIdentifier: String? = nil, program: Faculty) {
+        self.program = program
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+
         configure()
         configureContainer()
         configureTitleLabel()
-        configureStackView()
-    
+        configureFakeExtendButton()
+        configureProgramsLabel()
+        configureChevronImageView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -39,17 +41,17 @@ final class ApolloProgramCell: UITableViewCell {
 
 
 private extension ApolloProgramCell {
+    
     func configure() -> Void {
-        backgroundColor = .inversedLabelColor
-        contentView.backgroundColor = .inversedLabelColor
+        backgroundColor = .clear
         selectionStyle = .none
     }
-    
+
     func configureContainer() -> Void {
         container.translatesAutoresizingMaskIntoConstraints = false
         container.backgroundColor = .apolloBackgroundColor
         container.layer.cornerRadius = 24.0
-        
+
         contentView.addSubview(container)
         NSLayoutConstraint.activate([
             container.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16.0),
@@ -58,78 +60,65 @@ private extension ApolloProgramCell {
             container.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -6.0)
         ])
     }
-    
+
     func configureTitleLabel() -> Void {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.numberOfLines = 0
-        titleLabel.text = olympiad.faculty
+        titleLabel.text = program.name
         titleLabel.lineBreakMode = .byWordWrapping
         titleLabel.textColor = .label
         titleLabel.font = .systemFont(ofSize: 16.0, weight: .medium)
-        
+
         container.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16.0),
+            titleLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 12.0),
             titleLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 12.0),
-            titleLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.0)
+            titleLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -12.0)
         ])
     }
-    
-    func configureStackView() -> Void {
-        conditionStackView.translatesAutoresizingMaskIntoConstraints = false
-        conditionStackView.axis = .horizontal
-        conditionStackView.backgroundColor = nil
-        conditionStackView.spacing = 16
-        conditionStackView.distribution = .fillEqually
-        
-        configureAwardeeConditionView()
-        configureGradeConditionView()
-        configureSubjectConditionView()
-                
-        contentView.addSubview(conditionStackView)
+
+    func configureFakeExtendButton() -> Void {
+        fakeExtendButton.translatesAutoresizingMaskIntoConstraints = false
+        fakeExtendButton.backgroundColor = .label
+        fakeExtendButton.layer.cornerRadius = 12.0
+
+        container.addSubview(fakeExtendButton)
         NSLayoutConstraint.activate([
-            conditionStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16.0),
-            conditionStackView.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -12.0),
-            conditionStackView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16.0),
-            conditionStackView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.0),
-            conditionStackView.heightAnchor.constraint(equalToConstant: 64.0)
+            fakeExtendButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.0),
+            fakeExtendButton.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -12.0),
+            fakeExtendButton.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -12.0)
         ])
     }
-    
-    
-    func configureAwardeeConditionView() -> Void {
-        
-        let type: ProfileCondition.AwardeeType = {
-            if olympiad.condition.lowercased().contains("призёр") { return .medalist }
-            return .winner
-        }()
-        
-        awardeeView = ApolloProfileConditionView(condition: .awardee(type))
-        conditionStackView.addArrangedSubview(awardeeView)
+
+    func configureProgramsLabel() -> Void {
+        olympiadsLabel.translatesAutoresizingMaskIntoConstraints = false
+        olympiadsLabel.textColor = .inversedLabelColor
+        olympiadsLabel.text = olympiadsCount
+        olympiadsLabel.font = .systemFont(ofSize: 12.0, weight: .medium)
+        olympiadsLabel.textAlignment = .center
+
+        fakeExtendButton.addSubview(olympiadsLabel)
+        NSLayoutConstraint.activate([
+            olympiadsLabel.leadingAnchor.constraint(equalTo: fakeExtendButton.leadingAnchor, constant: 8.0),
+            olympiadsLabel.bottomAnchor.constraint(equalTo: fakeExtendButton.bottomAnchor, constant: -4.0),
+            olympiadsLabel.topAnchor.constraint(equalTo: fakeExtendButton.topAnchor, constant: 4.0)
+        ])
     }
-    
-    func configureGradeConditionView() -> Void {
-        
-        let stage: ProfileCondition.Grade = {
-            switch olympiad.grade {
-            case "9":
-                return .ninth
-            case "10":
-                return .tenth
-            case "11":
-                return .eleventh
-            default:
-                fatalError("Unknown grade. Olympiad diplomas must be obtained in grades 9-11.")
-            }
-        }()
-        
-        gradeView = ApolloProfileConditionView(condition: .grade(stage))
-        conditionStackView.addArrangedSubview(gradeView)
+
+    func configureChevronImageView() -> Void {
+        chevronImage.translatesAutoresizingMaskIntoConstraints = false
+        chevronImage.contentMode = .scaleAspectFit
+        chevronImage.tintColor = .inversedLabelColor
+        chevronImage.image = ApolloResources.Images.UniversityCell.chevronDown
+
+        fakeExtendButton.addSubview(chevronImage)
+        NSLayoutConstraint.activate([
+            chevronImage.topAnchor.constraint(equalTo: fakeExtendButton.topAnchor, constant: 3.0),
+            chevronImage.bottomAnchor.constraint(equalTo: fakeExtendButton.bottomAnchor, constant: -3.0),
+            chevronImage.trailingAnchor.constraint(equalTo: fakeExtendButton.trailingAnchor, constant: -5.0),
+            chevronImage.leadingAnchor.constraint(equalTo: olympiadsLabel.trailingAnchor, constant: 2.0),
+            chevronImage.widthAnchor.constraint(equalToConstant: 18.0),
+            chevronImage.heightAnchor.constraint(equalToConstant: 18.0)
+        ])
     }
-    
-    func configureSubjectConditionView() -> Void {
-        subjectView = ApolloProfileConditionView(condition: .subject(olympiad.subject, olympiad.score))
-        conditionStackView.addArrangedSubview(subjectView)
-    }
-    
 }

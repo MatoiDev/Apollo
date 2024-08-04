@@ -7,11 +7,13 @@
 
 import UIKit
 
+
 enum ApolloTabs: Int {
     case main
     case universities
     case settings
 }
+
 
 final class ApolloTabBarController: UITabBarController {
 

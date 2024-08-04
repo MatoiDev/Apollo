@@ -8,6 +8,7 @@
 import UIKit
 import Combine
 
+
 final class ApolloProfileInfoView: UIView {
     
     // Properties
@@ -39,6 +40,7 @@ final class ApolloProfileInfoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloProfileInfoView {
     
@@ -73,6 +75,7 @@ private extension ApolloProfileInfoView {
     }
 }
 
+
 extension ApolloProfileInfoView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section > 1 else { return }
@@ -83,14 +86,18 @@ extension ApolloProfileInfoView: UITableViewDelegate {
         guard !olympiads.isEmpty else { return }
         
         presenter?.present(with: olympiads)
-        
     }
 }
+
 
 extension ApolloProfileInfoView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         3 // 1 на хеддер, 1 на ячейки и ещё 1 на  университеты
+    }
+
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -197,5 +204,4 @@ extension ApolloProfileInfoView: UITableViewDataSource {
         }
         return res
     }
-    
 }

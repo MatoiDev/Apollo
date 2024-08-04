@@ -7,11 +7,13 @@
 
 import UIKit
 
+
 enum ApolloEmptyState {
     case noResults
     case noInput
     case error(_ description: String)
 }
+
 
 final class ApolloEmptyStateView: UIView {
     
@@ -41,6 +43,7 @@ final class ApolloEmptyStateView: UIView {
     }
 }
 
+
 private extension ApolloEmptyStateView {
     
     func configure() -> Void {
@@ -56,7 +59,6 @@ private extension ApolloEmptyStateView {
         NSLayoutConstraint.activate([
             container.centerXAnchor.constraint(equalTo: centerXAnchor),
             container.centerYAnchor.constraint(equalTo: centerYAnchor)
-            // container.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width * 0.8)
         ])
     }
     

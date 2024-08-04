@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 final class ApolloProfilesCollectionViewFlowLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
@@ -20,6 +21,8 @@ final class ApolloProfilesCollectionViewFlowLayout: UICollectionViewFlowLayout {
     
 }
 
+
 private extension ApolloProfilesCollectionViewFlowLayout {
+    
     func configure() -> Void { }
 }

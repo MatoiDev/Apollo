@@ -4,6 +4,7 @@
 
 import UIKit
 
+
 final class ApolloUniversitiesScreenHeaderCollectionCell: UIView {
 
     // Properties
@@ -38,7 +39,9 @@ final class ApolloUniversitiesScreenHeaderCollectionCell: UIView {
     }
 }
 
+
 private extension ApolloUniversitiesScreenHeaderCollectionCell {
+    
     func configure() -> Void {
         backgroundColor = nil
     }

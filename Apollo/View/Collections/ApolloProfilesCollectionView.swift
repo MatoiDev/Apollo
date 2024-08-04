@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 final class ApolloProfilesCollectionView: UICollectionView {
 
     override init(frame: CGRect = .zero, collectionViewLayout layout: UICollectionViewLayout) {
@@ -18,11 +19,11 @@ final class ApolloProfilesCollectionView: UICollectionView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 
 private extension ApolloProfilesCollectionView {
+    
     func configure() -> Void {
         backgroundColor = nil
     }

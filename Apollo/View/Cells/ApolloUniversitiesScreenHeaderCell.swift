@@ -5,6 +5,7 @@
 import UIKit
 import Combine
 
+
 final class ApolloUniversitiesScreenHeaderCell: UITableViewCell {
 
     // Bindings
@@ -40,7 +41,27 @@ final class ApolloUniversitiesScreenHeaderCell: UITableViewCell {
     }
 }
 
+
 private extension ApolloUniversitiesScreenHeaderCell {
+    
+    func bindViewToViewModel() -> Void {
+        viewModel.data
+                .receive(on: DispatchQueue.main)
+                .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] universitiesCount, programsCount, olympiadsCount in
+                    guard let self else { return }
+
+                    self.universitiesCountCell.updateTitle(with: "\(universitiesCount)")
+                    self.programsCountCell.updateTitle(with: "\(programsCount)")
+                    self.olympiadsCountCell.updateTitle(with: "\(olympiadsCount)")
+
+                })
+                .store(in: &subscribers)
+
+        Task {
+            await viewModel.fetchData()
+        }
+    }
+    
     func configure() -> Void {
         backgroundColor = .clear
         selectionStyle = .none
@@ -124,23 +145,5 @@ private extension ApolloUniversitiesScreenHeaderCell {
             stackView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 8.0),
             stackView.trailingAnchor.constraint(equalTo: rightImageView.leadingAnchor, constant: -4.0)
         ])
-    }
-
-    func bindViewToViewModel() -> Void {
-        viewModel.data
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] universitiesCount, programsCount, olympiadsCount in
-                    guard let self else { return }
-
-                    self.universitiesCountCell.updateTitle(with: "\(universitiesCount)")
-                    self.programsCountCell.updateTitle(with: "\(programsCount)")
-                    self.olympiadsCountCell.updateTitle(with: "\(olympiadsCount)")
-
-                })
-                .store(in: &subscribers)
-
-        Task {
-            await viewModel.fetchData()
-        }
     }
 }

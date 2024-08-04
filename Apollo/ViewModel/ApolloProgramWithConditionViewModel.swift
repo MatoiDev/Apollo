@@ -1,5 +1,5 @@
 //
-//  ApolloProgramCellViewModel.swift
+//  ApolloProgramWithConditionViewModel.swift
 //  Apollo
 //
 //  Created by Matoi on 07.07.2024.
@@ -8,8 +8,10 @@
 import Foundation
 import Combine
 
-final class ApolloProgramViewModel {
+
+final class ApolloProgramWithConditionViewModel {
     
+    // Properties
     private let service: ApolloAPIServiceStandart
     
     // Publishers

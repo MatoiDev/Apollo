@@ -8,7 +8,11 @@
 import UIKit
 import Combine
 
+
 final class ApolloUniversityResultCell: UITableViewCell {
+    
+    // Properties
+    private let university: University
     
     // Elements
     private let container: UIView = UIView()
@@ -16,9 +20,6 @@ final class ApolloUniversityResultCell: UITableViewCell {
     private let nameLabel: UILabel = UILabel()
     private let cityLabel: UILabel = UILabel()
     private let specialitiesLabel: UILabel = UILabel()
-    
-    // Properties
-    private let university: University
     
     // Bindings
     private let viewModel: ApolloUniversityResultViewModel
@@ -45,6 +46,7 @@ final class ApolloUniversityResultCell: UITableViewCell {
     }
 }
 
+
 private extension ApolloUniversityResultCell {
     
     func bindViewToViewModel() -> Void {
@@ -63,7 +65,6 @@ private extension ApolloUniversityResultCell {
                 specialitiesLabel.text = String.programs(faculties.count)
             }
             .store(in: &subscribers)
-
     }
     
     func configure() -> Void {
@@ -140,7 +141,6 @@ private extension ApolloUniversityResultCell {
         specialitiesLabel.minimumScaleFactor = 0.01
         specialitiesLabel.textColor = .secondaryLabel
         specialitiesLabel.adjustsFontSizeToFitWidth = true
-        
         specialitiesLabel.text = "Подсчёт программ..."
         
         container.addSubview(specialitiesLabel)

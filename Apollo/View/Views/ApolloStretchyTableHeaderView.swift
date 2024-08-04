@@ -7,6 +7,7 @@ import UIKit
 
 
 final class ApolloStretchyTableHeaderView: UIView {
+    
     // Properties
     private var headerImage: UIImage?
 
@@ -62,6 +63,7 @@ final class ApolloStretchyTableHeaderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloStretchyTableHeaderView {
 

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 enum OlympiadBenefit {
     case level(_ value: String)
     case score(_ value: String)
@@ -14,9 +15,12 @@ enum OlympiadBenefit {
 
 final class ApolloOlympiadBenefitView: UIView {
     
+    // Properties
+    private let benefit: OlympiadBenefit
+    
+    // Elements
     private let titleLabel: UILabel = UILabel()
     private let subtitleLabel: UILabel = UILabel()
-    private let benefit: OlympiadBenefit
     
     init(frame: CGRect = .zero, benefit: OlympiadBenefit) {
         self.benefit = benefit
@@ -60,7 +64,6 @@ private extension ApolloOlympiadBenefitView {
     }
     
     func configureSubtitleLabel() -> Void {
-
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.text = subtitleForBenefit
         subtitleLabel.font = .systemFont(ofSize: 14, weight: .medium)

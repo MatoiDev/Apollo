@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 extension String {
     static func profiles(_ count: Int) -> String {
         if 11...19 ~= count { return "\(count) профилей"}
@@ -43,6 +44,18 @@ extension String {
             return "\(count) программ"
         }
     }
+
+    static func olympiads(_ count: Int) -> String {
+        if 11...19 ~= count { return "\(count) олимпиад"}
+        switch (count % 10) {
+        case 1:
+            return "\(count) олимпиада"
+        case 2...4:
+            return "\(count) олимпиады"
+        default:
+            return "\(count) олимпиад"
+        }
+    }
     
     static func educationalPrograms(_ count: Int) -> String {
         if 11...19 ~= count { return "\(count) Образовательных программ"}
@@ -67,5 +80,4 @@ extension String {
             return "\(count) Учебных заведений"
         }
     }
-
 }

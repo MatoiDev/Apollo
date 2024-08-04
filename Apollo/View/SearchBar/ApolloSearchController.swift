@@ -7,9 +7,11 @@
 
 import UIKit
 
+
 protocol ApolloSearchControllerDelegate: AnyObject {
     func collapseKeyboard() -> Void
 }
+
 
 class ApolloSearchController: UISearchController {
 

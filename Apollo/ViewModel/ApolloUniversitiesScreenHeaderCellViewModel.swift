@@ -5,6 +5,7 @@
 import Foundation
 import Combine
 
+
 final class ApolloUniversitiesScreenHeaderCellViewModel {
 
     // Properties
@@ -28,7 +29,6 @@ final class ApolloUniversitiesScreenHeaderCellViewModel {
         } catch {
             data.send(completion: .failure(error))
         }
-
     }
 
     private func fetchUniversitiesCount() async throws -> Int {

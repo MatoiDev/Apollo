@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 import Combine
 
+
 final class ApolloUniversityInfoViewModel {
     
+    // Properties
     private let service: ApolloAPIServiceStandart
     
     // Publishers
@@ -29,6 +31,5 @@ final class ApolloUniversityInfoViewModel {
         } catch {
             universityImage.send(completion: .failure(error))
         }
-        
     }
 }

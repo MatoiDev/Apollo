@@ -4,14 +4,16 @@
 
 import UIKit
 
+
 final class ApolloTableViewSectionFooterWithTextField: UIView {
 
     // Properties
     private let title: String?
+    private let textFieldBackgroundColor: UIColor
 
     // Elements
     var textField: UITextField = UITextField()
-    private let titleLabel: UILabel = UILabel()
+    var titleLabel: UILabel = UILabel()
 
     // Constraints
     private var textFieldLeadingConstraint: NSLayoutConstraint!
@@ -20,8 +22,9 @@ final class ApolloTableViewSectionFooterWithTextField: UIView {
     private var textFieldTrailingActiveConstraint: NSLayoutConstraint!
     private var textFieldWidthConstraint: NSLayoutConstraint!
 
-    init(frame: CGRect = .zero, title: String?) {
+    init(frame: CGRect = .zero, title: String?, backgroundColor: UIColor = .apolloCellBackgroundColor) {
         self.title = title
+        textFieldBackgroundColor = backgroundColor
         super.init(frame: frame)
 
         configure()
@@ -35,6 +38,7 @@ final class ApolloTableViewSectionFooterWithTextField: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloTableViewSectionFooterWithTextField {
 
@@ -70,7 +74,7 @@ private extension ApolloTableViewSectionFooterWithTextField {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         textField.layer.cornerRadius = 10.0
-        textField.backgroundColor = .apolloCellBackgroundColor
+        textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = .label
         textField.leftView = viewPadding
         textField.autocapitalizationType = .none
@@ -135,5 +139,4 @@ private extension ApolloTableViewSectionFooterWithTextField {
             self.layoutIfNeeded()
         }
     }
-
 }

@@ -11,10 +11,16 @@ protocol ApolloContactInfoCellDelegate: AnyObject {
     func websiteButtonClicked() -> Void
 }
 
+
 final class ApolloContactInfoCell: UITableViewCell {
 
     // Properties
     private let university: University
+    private lazy var websiteLabelTitle: String = {
+        university.url
+                .replacingOccurrences(of: "https://", with: "www.")
+                .replacingOccurrences(of: "/", with: "")
+    }()
 
     // Elements
     private let leftImageView: UIImageView = UIImageView()
@@ -24,12 +30,6 @@ final class ApolloContactInfoCell: UITableViewCell {
     private let websiteButton: UIButton = UIButton(type: .system)
     private let separator: UIView = UIView()
     private let socialLinksStackView: UIStackView = UIStackView()
-
-    private lazy var websiteLabelTitle: String = {
-        university.url
-                .replacingOccurrences(of: "https://", with: "www.")
-                .replacingOccurrences(of: "/", with: "")
-    }()
 
     weak var delegate: ApolloContactInfoCellDelegate?
 
@@ -50,6 +50,7 @@ final class ApolloContactInfoCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloContactInfoCell {
 
@@ -135,7 +136,6 @@ private extension ApolloContactInfoCell {
         ])
     }
 
-
     func configureSocialLinksStackView() -> Void {
         socialLinksStackView.translatesAutoresizingMaskIntoConstraints = false
         socialLinksStackView.axis = .horizontal
@@ -177,8 +177,8 @@ private extension ApolloContactInfoCell {
 
     @objc func handleTapGesture(_ sender: UITapGestureRecognizer) {
         guard let cell = sender.view as? ApolloSocialLinkCell else { return }
+        
         socialCellDidSelect(cell.link)
-        print(cell.link)
     }
 
     func socialCellDidSelect(_ url: String) -> Void {

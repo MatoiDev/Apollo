@@ -28,7 +28,9 @@ final class ApolloUniversityTitleWithYearOfFoundationCell: UITableViewCell {
     }
 }
 
+
 private extension ApolloUniversityTitleWithYearOfFoundationCell {
+    
     func configure() -> Void {
         backgroundColor = .clear
         selectionStyle = .none

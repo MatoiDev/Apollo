@@ -8,13 +8,17 @@
 import UIKit
 import Combine
 
+
 final class ApolloGeneralLeftCell: UITableViewCell {
     
+    // Properties
     private var title: String?
-    private let titleLabel: UILabel = UILabel()
     private let subtitle: String
-    private let subtitleLabel: UILabel = UILabel()
     private let image: UIImage
+    
+    // Elements
+    private let titleLabel: UILabel = UILabel()
+    private let subtitleLabel: UILabel = UILabel()
     private let leftImageView: UIImageView = UIImageView()
     private let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .medium)
     
@@ -41,7 +45,6 @@ final class ApolloGeneralLeftCell: UITableViewCell {
         configureFetchingIndicatorView()
         
         observe(futureTitle)
-
     }
     
     required init?(coder: NSCoder) {
@@ -124,12 +127,13 @@ private extension ApolloGeneralLeftCell {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 guard let self else { return }
-                if case .failure(_) = completion {
-                    indicator.stopAnimating()
-                }
+                
+                if case .failure(_) = completion { indicator.stopAnimating() }
             } receiveValue: { [weak self] title in
                 guard let self else { return }
+                
                 self.title = "\(title) Уровень"
+                
                 UIView.animate(withDuration: 0.5) {
                     self.indicator.stopAnimating()
                     self.titleLabel.text = self.title

@@ -8,6 +8,7 @@
 import UIKit
 import Combine
 
+
 final class ApolloUniversityCell: UITableViewCell {
     
     // Properties
@@ -31,7 +32,6 @@ final class ApolloUniversityCell: UITableViewCell {
     private let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
 
     init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, universityID: String, specifiedProfilesCount: Int, viewModel: ApolloUniversityCellViewModel) {
-        
         profilesCount = specifiedProfilesCount
         self.universityID = universityID
         self.viewModel = viewModel
@@ -52,7 +52,6 @@ final class ApolloUniversityCell: UITableViewCell {
     }
     
     init(style: UITableViewCell.CellStyle, reuseIdentifier: String?, university: University, viewModel: ApolloUniversityCellViewModel) {
-        
         profilesCount = 0
         self.university = university
         self.viewModel = viewModel
@@ -72,8 +71,6 @@ final class ApolloUniversityCell: UITableViewCell {
         updateCellWithFetchedUniversity(university)
         bindViewToViewModel(with: .universityStrategy)
     }
-    
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -181,7 +178,6 @@ private extension ApolloUniversityCell {
         programsLabel.font = .systemFont(ofSize: 12.0, weight: .medium)
         programsLabel.textAlignment = .center
         
-        
         fakeExtendButton.addSubview(programsLabel)
         NSLayoutConstraint.activate([
             programsLabel.leadingAnchor.constraint(equalTo: fakeExtendButton.leadingAnchor, constant: 8.0),
@@ -224,7 +220,6 @@ private extension ApolloUniversityCell {
         yearLabel.text = "\(university.yearOfFoundation)"
         cityLabel.text = university.address.city
     }
-    
 }
 
 
@@ -245,7 +240,6 @@ private extension ApolloUniversityCell {
     }
     
     func bindViewWithIDStrategy() -> Void {
-        
         guard let universityID else { return }
         
         viewModel.university
@@ -259,9 +253,7 @@ private extension ApolloUniversityCell {
         
         viewModel.universityImage
             .receive(on: DispatchQueue.main)
-            .sink { _ in return
-        
-            } receiveValue: { [weak self] image in
+            .sink { _ in } receiveValue: { [weak self] image in
                 guard let self else { return }
                 leftImageView.image = image
                 indicator.stopAnimating()
@@ -274,14 +266,11 @@ private extension ApolloUniversityCell {
     }
     
     func bindViewWithUniversityStrategy() -> Void {
-        
         guard let university else { return }
         
         viewModel.universityImage
             .receive(on: DispatchQueue.main)
-            .sink { _ in return
-
-            } receiveValue: { [weak self] image in
+            .sink { _ in } receiveValue: { [weak self] image in
                 guard let self else { return }
                 leftImageView.image = image
                 indicator.stopAnimating()
@@ -297,8 +286,8 @@ private extension ApolloUniversityCell {
                 .store(in: &subscribers)
         
         Task {
-                    await viewModel.fetchImageWithURL(university.imageURL)
-                    await viewModel.fetchProgramsCountFor(university: university)
-                }
+            await viewModel.fetchImageWithURL(university.imageURL)
+            await viewModel.fetchProgramsCountFor(university: university)
+        }
     }
 }

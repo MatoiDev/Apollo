@@ -8,11 +8,8 @@
 import UIKit
 import Combine
 
+
 class ApolloSearchView: UIView {
-    
-    // Bindings
-    private let viewModel: ApolloSearchViewModel!
-    private var cancellables: Set<AnyCancellable> = Set<AnyCancellable>()
     
     // Elements
     private let tableView: UITableView = UITableView()
@@ -23,6 +20,10 @@ class ApolloSearchView: UIView {
     // Properties
     private var olympiads: [GroupedOlympiad] = []
     private var universities: [University] = []
+    
+    // Bindings
+    private let viewModel: ApolloSearchViewModel!
+    private var cancellables: Set<AnyCancellable> = Set<AnyCancellable>()
     
     // Delegates
     weak var presenter: ApolloMainViewControllerPresenter?
@@ -88,8 +89,8 @@ private extension ApolloSearchView {
             .debounce(for: 0.1, scheduler: RunLoop.main)
             .sink { [weak viewModel] textInput in
                 guard let viewModel else { return }
+                
                 viewModel.searchText = textInput
-                print(textInput)
             }
             .store(in: &cancellables)
         
@@ -154,6 +155,7 @@ private extension ApolloSearchView {
     }
 }
 
+
 extension ApolloSearchView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -208,6 +210,7 @@ extension ApolloSearchView: UITableViewDelegate {
         144.0
     }
 }
+
 
 extension ApolloSearchView: UITableViewDataSource {
 

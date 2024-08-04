@@ -94,14 +94,22 @@ private extension ApolloUniversityInfoView {
     @objc func goToUniversityOlympiad() -> Void {
         presenter?.present(with: university.mainOlympiad)
     }
+
+    @objc func goToProgramsSection() -> Void {
+        presenter?.present(with: university)
+    }
+
 }
 
+
 extension ApolloUniversityInfoView: UITableViewDelegate {
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let headerView = tableView.tableHeaderView as! ApolloStretchyTableHeaderView
         headerView.scrollViewDidScroll(scrollView: scrollView)
     }
 }
+
 
 extension ApolloUniversityInfoView: UITableViewDataSource {
 
@@ -131,7 +139,7 @@ extension ApolloUniversityInfoView: UITableViewDataSource {
             return ApolloButtonCell(
                     buttonStyle: .outlined,
                     buttonTitle: "Educational Programs",
-                    action: #selector(goToUniversityOlympiad)
+                    action: #selector(goToProgramsSection)
             )
         case 4:
             let cell: ApolloContactInfoCell = ApolloContactInfoCell(university: university)

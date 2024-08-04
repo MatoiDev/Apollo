@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 final class ApolloSearchEditingOverlayGestureView: UIToolbar {
     
     private let collapseButton: UIBarButtonItem = UIBarButtonItem()
@@ -31,6 +32,7 @@ final class ApolloSearchEditingOverlayGestureView: UIToolbar {
         sizeToFit()
     }
 }
+
 
 private extension ApolloSearchEditingOverlayGestureView {
     

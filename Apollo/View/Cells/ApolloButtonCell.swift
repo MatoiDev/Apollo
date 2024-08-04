@@ -43,7 +43,9 @@ final class ApolloButtonCell: UITableViewCell {
     }
 }
 
+
 private extension ApolloButtonCell {
+    
     func configure() -> Void {
         backgroundColor = .clear
         selectionStyle = .none

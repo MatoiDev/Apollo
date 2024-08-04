@@ -8,7 +8,9 @@
 import Combine
 import Foundation
 
+
 final class ApolloUniversitiesScreenViewModel {
+    
     // Properties
     private let service: ApolloAPIServiceStandart
     

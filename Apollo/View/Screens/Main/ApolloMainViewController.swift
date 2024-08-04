@@ -7,14 +7,17 @@
 
 import UIKit
 
+
 protocol ApolloMainViewControllerDelegate: AnyObject {
     func callApolloSearchViewController() -> Void
 }
+
 
 protocol ApolloMainViewControllerPresenter: AnyObject {
     func present(with olympiad: GroupedOlympiad) -> Void
     func present(with university: University) -> Void
 }
+
 
 final class ApolloMainViewController: UIViewController {
     
@@ -41,6 +44,7 @@ final class ApolloMainViewController: UIViewController {
     }
 }
 
+
 extension ApolloMainViewController: ApolloMainViewControllerDelegate {
     func callApolloSearchViewController() {
         view.isHidden = true
@@ -49,12 +53,14 @@ extension ApolloMainViewController: ApolloMainViewControllerDelegate {
     }
 }
 
+
 extension ApolloMainViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         navigationController?.setNavigationBarHidden(true, animated: true)
         view.isHidden = false
     }
 }
+
 
 extension ApolloMainViewController: ApolloMainViewControllerPresenter {
     func present(with olympiad: GroupedOlympiad) {
@@ -64,6 +70,8 @@ extension ApolloMainViewController: ApolloMainViewControllerPresenter {
     }
     
     func present(with university: University) {
-        dump(university)
+        let viewController: ApolloUniversityInfoViewController = ApolloUniversityInfoViewController(university: university, calledFromSearchView: true)
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

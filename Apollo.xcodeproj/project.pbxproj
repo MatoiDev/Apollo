@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37C710EDC79854F0F0DB4A49 /* ApolloUniversitiesScreenHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */; };
+		37C712282A2B8AFCEFE9BBD1 /* ApolloUniversityAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */; };
+		37C7124A548CC37F6517DE6D /* ApolloUniversitiesScreenHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */; };
+		37C71461EB452747D9F64A7C /* ApolloSocialLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */; };
+		37C7146A923D66466372A9BC /* ApolloUniversityTitleWithYearOfFoundationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */; };
+		37C715A429A27E54F6AEFABB /* ApolloLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C717A58A0C1422107F03FB /* ApolloLocationView.swift */; };
+		37C715C48ABDD8DC850C4C6A /* ApolloUniversitiesScreenHeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C715E8626C01FAA7119E45 /* ApolloUniversitiesScreenHeaderCollectionCell.swift */; };
+		37C7180D6AF73D726EA9E68A /* ApolloButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71688B787F19340E173B6 /* ApolloButtonCell.swift */; };
+		37C719186FDD222F928745FD /* ApolloContactInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */; };
+		37C71E9C77EC6E9AD3EFE803 /* ApolloStretchyTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */; };
+		37C71F9C7822B63707CA9749 /* ApolloTableViewSectionFooterWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C71D69DCEBCBF31BECF334 /* ApolloTableViewSectionFooterWithTextField.swift */; };
+		950692D42C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D32C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift */; };
+		950692D62C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D52C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift */; };
+		950692D92C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692D82C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift */; };
+		950692DB2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692DA2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift */; };
+		950692DD2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692DC2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift */; };
+		950692DF2C2B519B00E58AC5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950692DE2C2B519B00E58AC5 /* String+Extensions.swift */; };
+		9518CD2F2C11DED3005EC560 /* ApolloSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518CD2E2C11DED3005EC560 /* ApolloSearchController.swift */; };
+		952470D82C3AB69100C8B0DA /* ApolloProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */; };
+		952470DA2C3AB6A000C8B0DA /* ApolloProgramsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */; };
+		952470DC2C3ABAF000C8B0DA /* ApolloProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */; };
+		952470DE2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */; };
+		952470E02C3ACEF800C8B0DA /* ApolloProfileConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952470DF2C3ACEF800C8B0DA /* ApolloProfileConditionView.swift */; };
+		9550F75E2C1C00A1008CCECB /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9550F75D2C1C00A1008CCECB /* TestingAppDelegate.swift */; };
+		9550F7602C1C010B008CCECB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9550F75F2C1C010B008CCECB /* main.swift */; };
+		9554AE632C1C9EC200BE3E82 /* UITextField+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE622C1C9EC200BE3E82 /* UITextField+Combine.swift */; };
+		9554AE662C1CA32C00BE3E82 /* ApolloAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE652C1CA32C00BE3E82 /* ApolloAPIService.swift */; };
+		9554AE6D2C1CB5EA00BE3E82 /* Olympiad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE6C2C1CB5EA00BE3E82 /* Olympiad.swift */; };
+		9554AE6F2C1CB71800BE3E82 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE6E2C1CB71800BE3E82 /* University.swift */; };
+		9554AE712C1CB84E00BE3E82 /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE702C1CB84E00BE3E82 /* Faculty.swift */; };
+		9554AE732C1CC5C400BE3E82 /* ApolloAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554AE722C1CC5C400BE3E82 /* ApolloAPIServiceTests.swift */; };
+		9557ED1C2C21A840009F0F98 /* ApolloEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557ED1B2C21A840009F0F98 /* ApolloEmptyStateView.swift */; };
+		9557ED202C21D463009F0F98 /* ApolloUniversityResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557ED1F2C21D463009F0F98 /* ApolloUniversityResultCell.swift */; };
+		9557ED222C21D479009F0F98 /* ApolloOlympiadResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557ED212C21D479009F0F98 /* ApolloOlympiadResultCell.swift */; };
+		957D3FAD2C10B545000B5525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FAC2C10B545000B5525 /* AppDelegate.swift */; };
+		957D3FAF2C10B545000B5525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FAE2C10B545000B5525 /* SceneDelegate.swift */; };
+		957D3FB62C10B546000B5525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D3FB52C10B546000B5525 /* Assets.xcassets */; };
+		957D3FB92C10B546000B5525 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 957D3FB82C10B546000B5525 /* Base */; };
+		957D3FCE2C10B546000B5525 /* ApolloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FCD2C10B546000B5525 /* ApolloUITests.swift */; };
+		957D3FD02C10B546000B5525 /* ApolloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FCF2C10B546000B5525 /* ApolloUITestsLaunchTests.swift */; };
+		957D3FE32C10B988000B5525 /* ApolloTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FE22C10B988000B5525 /* ApolloTabBarController.swift */; };
+		957D3FE62C10C9A0000B5525 /* ApolloResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FE52C10C9A0000B5525 /* ApolloResources.swift */; };
+		957D3FE82C10D9E9000B5525 /* ApolloNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FE72C10D9E9000B5525 /* ApolloNavigationController.swift */; };
+		957D3FEA2C10DC5A000B5525 /* ApolloMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FE92C10DC5A000B5525 /* ApolloMainViewController.swift */; };
+		957D3FEC2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FEB2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift */; };
+		957D3FEE2C10DC88000B5525 /* ApolloSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FED2C10DC88000B5525 /* ApolloSettingsViewController.swift */; };
+		957D3FF42C10E154000B5525 /* ApolloMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FF32C10E153000B5525 /* ApolloMainScreen.swift */; };
+		957D3FF62C10E160000B5525 /* ApolloUniversitiesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FF52C10E160000B5525 /* ApolloUniversitiesScreen.swift */; };
+		957D3FF82C10E172000B5525 /* ApolloSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D3FF72C10E172000B5525 /* ApolloSettingsScreen.swift */; };
+		957DE9E42C2C7FE4009AD77E /* ApolloProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957DE9E32C2C7FE4009AD77E /* ApolloProfileCell.swift */; };
+		957DE9E62C2C807A009AD77E /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957DE9E52C2C807A009AD77E /* ProfileData.swift */; };
+		957DE9E82C2C9A63009AD77E /* ApolloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957DE9E72C2C9A63009AD77E /* ApolloButton.swift */; };
+		95825AAB2C14817F00886033 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95825AAA2C14817F00886033 /* UIColor+Extensions.swift */; };
+		959A92372C2C3886008D6104 /* ApolloProfilesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A92362C2C3886008D6104 /* ApolloProfilesCollectionView.swift */; };
+		959A923A2C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A92392C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift */; };
+		959A923D2C2C4566008D6104 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A923C2C2C4566008D6104 /* UIImage+Extensions.swift */; };
+		959A92402C2C5A1F008D6104 /* ApolloOlympiadBenefitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959A923F2C2C5A1F008D6104 /* ApolloOlympiadBenefitView.swift */; };
+		95A5346D2C233BDD00306276 /* ApolloUniversityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5346C2C233BDD00306276 /* ApolloUniversityCellViewModel.swift */; };
+		95AB6C552C37093700B8BCD9 /* ApolloProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB6C542C37093700B8BCD9 /* ApolloProfileInfoViewController.swift */; };
+		95AB6C572C37094700B8BCD9 /* ApolloProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB6C562C37094700B8BCD9 /* ApolloProfileInfoView.swift */; };
+		95AB6C592C3709E700B8BCD9 /* ApolloGeneralLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB6C582C3709E700B8BCD9 /* ApolloGeneralLeftCell.swift */; };
+		95AB6C5B2C37FB8A00B8BCD9 /* ApolloTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB6C5A2C37FB8A00B8BCD9 /* ApolloTitleCell.swift */; };
+		95AD0BB02C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD0BAF2C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift */; };
+		95AD0BB22C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD0BB12C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift */; };
+		95C0D61F2C2057A10031D198 /* ApolloSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C0D61E2C2057A10031D198 /* ApolloSearchView.swift */; };
+		95C0D6212C2057E80031D198 /* ApolloSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C0D6202C2057E80031D198 /* ApolloSearchViewModel.swift */; };
+		95C0D6232C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C0D6222C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift */; };
+		95C0D6282C20B4D80031D198 /* ApolloMainScreenSearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C0D6272C20B4D80031D198 /* ApolloMainScreenSearchButton.swift */; };
+		95CC71DA2C39603F00090174 /* ApolloProfileInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC71D92C39603F00090174 /* ApolloProfileInfoViewModel.swift */; };
+		95CC71DC2C3987A700090174 /* ApolloUniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */; };
+		95D776F52C29A41000506B33 /* GroupedOlympiad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D776F42C29A41000506B33 /* GroupedOlympiad.swift */; };
+		95E579562C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		957D3FC02C10B546000B5525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957D3FA12C10B545000B5525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 957D3FA82C10B545000B5525;
+			remoteInfo = Apollo;
+		};
+		957D3FCA2C10B546000B5525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957D3FA12C10B545000B5525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 957D3FA82C10B545000B5525;
+			remoteInfo = Apollo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversityAddressCell.swift; sourceTree = "<group>"; };
+		37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCell.swift; sourceTree = "<group>"; };
+		37C715E8626C01FAA7119E45 /* ApolloUniversitiesScreenHeaderCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCollectionCell.swift; sourceTree = "<group>"; };
+		37C71688B787F19340E173B6 /* ApolloButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloButtonCell.swift; sourceTree = "<group>"; };
+		37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloSocialLinkCell.swift; sourceTree = "<group>"; };
+		37C717A58A0C1422107F03FB /* ApolloLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloLocationView.swift; sourceTree = "<group>"; };
+		37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloStretchyTableHeaderView.swift; sourceTree = "<group>"; };
+		37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		37C71D69DCEBCBF31BECF334 /* ApolloTableViewSectionFooterWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloTableViewSectionFooterWithTextField.swift; sourceTree = "<group>"; };
+		37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloContactInfoCell.swift; sourceTree = "<group>"; };
+		37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloUniversityTitleWithYearOfFoundationCell.swift; sourceTree = "<group>"; };
+		950692D32C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadInfoViewController.swift; sourceTree = "<group>"; };
+		950692D52C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadInfoView.swift; sourceTree = "<group>"; };
+		950692D82C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityInfoView.swift; sourceTree = "<group>"; };
+		950692DA2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityInfoViewController.swift; sourceTree = "<group>"; };
+		950692DC2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortOlympiadInfo.swift; sourceTree = "<group>"; };
+		950692DE2C2B519B00E58AC5 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		9518CD2E2C11DED3005EC560 /* ApolloSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSearchController.swift; sourceTree = "<group>"; };
+		952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramsViewController.swift; sourceTree = "<group>"; };
+		952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramsView.swift; sourceTree = "<group>"; };
+		952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramCell.swift; sourceTree = "<group>"; };
+		952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProgramCellViewModel.swift; sourceTree = "<group>"; };
+		952470DF2C3ACEF800C8B0DA /* ApolloProfileConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileConditionView.swift; sourceTree = "<group>"; };
+		9550F75D2C1C00A1008CCECB /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		9550F75F2C1C010B008CCECB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9554AE622C1C9EC200BE3E82 /* UITextField+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Combine.swift"; sourceTree = "<group>"; };
+		9554AE652C1CA32C00BE3E82 /* ApolloAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAPIService.swift; sourceTree = "<group>"; };
+		9554AE6C2C1CB5EA00BE3E82 /* Olympiad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olympiad.swift; sourceTree = "<group>"; };
+		9554AE6E2C1CB71800BE3E82 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		9554AE702C1CB84E00BE3E82 /* Faculty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
+		9554AE722C1CC5C400BE3E82 /* ApolloAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAPIServiceTests.swift; sourceTree = "<group>"; };
+		9557ED1B2C21A840009F0F98 /* ApolloEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloEmptyStateView.swift; sourceTree = "<group>"; };
+		9557ED1F2C21D463009F0F98 /* ApolloUniversityResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityResultCell.swift; sourceTree = "<group>"; };
+		9557ED212C21D479009F0F98 /* ApolloOlympiadResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadResultCell.swift; sourceTree = "<group>"; };
+		957D3FA92C10B545000B5525 /* Apollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		957D3FAC2C10B545000B5525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		957D3FAE2C10B545000B5525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		957D3FB52C10B546000B5525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		957D3FB82C10B546000B5525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		957D3FBA2C10B546000B5525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957D3FBF2C10B546000B5525 /* ApolloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957D3FC92C10B546000B5525 /* ApolloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957D3FCD2C10B546000B5525 /* ApolloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUITests.swift; sourceTree = "<group>"; };
+		957D3FCF2C10B546000B5525 /* ApolloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		957D3FE22C10B988000B5525 /* ApolloTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloTabBarController.swift; sourceTree = "<group>"; };
+		957D3FE52C10C9A0000B5525 /* ApolloResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloResources.swift; sourceTree = "<group>"; };
+		957D3FE72C10D9E9000B5525 /* ApolloNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloNavigationController.swift; sourceTree = "<group>"; };
+		957D3FE92C10DC5A000B5525 /* ApolloMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloMainViewController.swift; sourceTree = "<group>"; };
+		957D3FEB2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesViewController.swift; sourceTree = "<group>"; };
+		957D3FED2C10DC88000B5525 /* ApolloSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSettingsViewController.swift; sourceTree = "<group>"; };
+		957D3FF32C10E153000B5525 /* ApolloMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloMainScreen.swift; sourceTree = "<group>"; };
+		957D3FF52C10E160000B5525 /* ApolloUniversitiesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreen.swift; sourceTree = "<group>"; };
+		957D3FF72C10E172000B5525 /* ApolloSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSettingsScreen.swift; sourceTree = "<group>"; };
+		957DE9E32C2C7FE4009AD77E /* ApolloProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileCell.swift; sourceTree = "<group>"; };
+		957DE9E52C2C807A009AD77E /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		957DE9E72C2C9A63009AD77E /* ApolloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloButton.swift; sourceTree = "<group>"; };
+		95825AAA2C14817F00886033 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		959A92362C2C3886008D6104 /* ApolloProfilesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfilesCollectionView.swift; sourceTree = "<group>"; };
+		959A92392C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfilesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		959A923C2C2C4566008D6104 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		959A923F2C2C5A1F008D6104 /* ApolloOlympiadBenefitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloOlympiadBenefitView.swift; sourceTree = "<group>"; };
+		95A5346C2C233BDD00306276 /* ApolloUniversityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityCellViewModel.swift; sourceTree = "<group>"; };
+		95AB6C542C37093700B8BCD9 /* ApolloProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileInfoViewController.swift; sourceTree = "<group>"; };
+		95AB6C562C37094700B8BCD9 /* ApolloProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileInfoView.swift; sourceTree = "<group>"; };
+		95AB6C582C3709E700B8BCD9 /* ApolloGeneralLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloGeneralLeftCell.swift; sourceTree = "<group>"; };
+		95AB6C5A2C37FB8A00B8BCD9 /* ApolloTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloTitleCell.swift; sourceTree = "<group>"; };
+		95AD0BAF2C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityResultViewModel.swift; sourceTree = "<group>"; };
+		95AD0BB12C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversitiesScreenViewModel.swift; sourceTree = "<group>"; };
+		95C0D61E2C2057A10031D198 /* ApolloSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSearchView.swift; sourceTree = "<group>"; };
+		95C0D6202C2057E80031D198 /* ApolloSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSearchViewModel.swift; sourceTree = "<group>"; };
+		95C0D6222C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloSearchEditingOverlayGestureView.swift; sourceTree = "<group>"; };
+		95C0D6272C20B4D80031D198 /* ApolloMainScreenSearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloMainScreenSearchButton.swift; sourceTree = "<group>"; };
+		95CC71D92C39603F00090174 /* ApolloProfileInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloProfileInfoViewModel.swift; sourceTree = "<group>"; };
+		95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityCell.swift; sourceTree = "<group>"; };
+		95D776F42C29A41000506B33 /* GroupedOlympiad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedOlympiad.swift; sourceTree = "<group>"; };
+		95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUniversityInfoViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		957D3FA62C10B545000B5525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FBC2C10B546000B5525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FC62C10B546000B5525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950692D22C2AE84200E58AC5 /* OlympiadInfo */ = {
+			isa = PBXGroup;
+			children = (
+				950692D32C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift */,
+				950692D52C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift */,
+			);
+			path = OlympiadInfo;
+			sourceTree = "<group>";
+		};
+		950692D72C2AE8AE00E58AC5 /* UniversityInfo */ = {
+			isa = PBXGroup;
+			children = (
+				950692D82C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift */,
+				950692DA2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift */,
+			);
+			path = UniversityInfo;
+			sourceTree = "<group>";
+		};
+		952470D62C3AB66800C8B0DA /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				952470D72C3AB69100C8B0DA /* ApolloProgramsViewController.swift */,
+				952470D92C3AB6A000C8B0DA /* ApolloProgramsView.swift */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		9550F75C2C1C0029008CCECB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9550F75D2C1C00A1008CCECB /* TestingAppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9554AE642C1CA0D300BE3E82 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9554AE682C1CA3EE00BE3E82 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9554AE682C1CA3EE00BE3E82 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9554AE652C1CA32C00BE3E82 /* ApolloAPIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9554AE6B2C1CB5DD00BE3E82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9554AE6C2C1CB5EA00BE3E82 /* Olympiad.swift */,
+				9554AE6E2C1CB71800BE3E82 /* University.swift */,
+				9554AE702C1CB84E00BE3E82 /* Faculty.swift */,
+				95D776F42C29A41000506B33 /* GroupedOlympiad.swift */,
+				950692DC2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift */,
+				957DE9E52C2C807A009AD77E /* ProfileData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9557ED1E2C21D448009F0F98 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95AB6C582C3709E700B8BCD9 /* ApolloGeneralLeftCell.swift */,
+				9557ED1F2C21D463009F0F98 /* ApolloUniversityResultCell.swift */,
+				9557ED212C21D479009F0F98 /* ApolloOlympiadResultCell.swift */,
+				957DE9E32C2C7FE4009AD77E /* ApolloProfileCell.swift */,
+				95AB6C5A2C37FB8A00B8BCD9 /* ApolloTitleCell.swift */,
+				95CC71DB2C3987A700090174 /* ApolloUniversityCell.swift */,
+				952470DB2C3ABAF000C8B0DA /* ApolloProgramCell.swift */,
+				37C711E16B55C8469EECBBFA /* ApolloUniversitiesScreenHeaderCell.swift */,
+				37C71EF6695E9CFE96515460 /* ApolloUniversityTitleWithYearOfFoundationCell.swift */,
+				37C71688B787F19340E173B6 /* ApolloButtonCell.swift */,
+				37C71E682689E28094D98F9E /* ApolloContactInfoCell.swift */,
+				37C710995D0E1BF0E8346364 /* ApolloUniversityAddressCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		957D3FA02C10B545000B5525 = {
+			isa = PBXGroup;
+			children = (
+				957D3FAB2C10B545000B5525 /* Apollo */,
+				957D3FC22C10B546000B5525 /* ApolloTests */,
+				957D3FCC2C10B546000B5525 /* ApolloUITests */,
+				957D3FAA2C10B545000B5525 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		957D3FAA2C10B545000B5525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FA92C10B545000B5525 /* Apollo.app */,
+				957D3FBF2C10B546000B5525 /* ApolloTests.xctest */,
+				957D3FC92C10B546000B5525 /* ApolloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		957D3FAB2C10B545000B5525 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FDD2C10B6F5000B5525 /* View */,
+				957D3FDC2C10B6F0000B5525 /* Model */,
+				957D3FDE2C10B6FA000B5525 /* ViewModel */,
+				957D3FE12C10B71F000B5525 /* Application */,
+				957D3FE02C10B70F000B5525 /* Resources */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		957D3FC22C10B546000B5525 /* ApolloTests */ = {
+			isa = PBXGroup;
+			children = (
+				9550F75C2C1C0029008CCECB /* Application */,
+				9554AE722C1CC5C400BE3E82 /* ApolloAPIServiceTests.swift */,
+			);
+			path = ApolloTests;
+			sourceTree = "<group>";
+		};
+		957D3FCC2C10B546000B5525 /* ApolloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FCD2C10B546000B5525 /* ApolloUITests.swift */,
+				957D3FCF2C10B546000B5525 /* ApolloUITestsLaunchTests.swift */,
+			);
+			path = ApolloUITests;
+			sourceTree = "<group>";
+		};
+		957D3FDC2C10B6F0000B5525 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9554AE6B2C1CB5DD00BE3E82 /* Models */,
+				9554AE642C1CA0D300BE3E82 /* Services */,
+				95825AB22C1489D600886033 /* Helper */,
+				95825AA92C14815D00886033 /* Extensions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		957D3FDD2C10B6F5000B5525 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959A923E2C2C59C4008D6104 /* Views */,
+				959A92352C2C3857008D6104 /* Collections */,
+				9557ED1E2C21D448009F0F98 /* Cells */,
+				95C0D6262C20B4B50031D198 /* Buttons */,
+				957D3FF22C10E13B000B5525 /* Screens */,
+				95825AB12C14896A00886033 /* SearchBar */,
+				95825AB02C14895E00886033 /* TabBar */,
+				95825AAF2C14894F00886033 /* NavigationBar */,
+				957D3FB72C10B546000B5525 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		957D3FDE2C10B6FA000B5525 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95C0D6202C2057E80031D198 /* ApolloSearchViewModel.swift */,
+				95A5346C2C233BDD00306276 /* ApolloUniversityCellViewModel.swift */,
+				95CC71D92C39603F00090174 /* ApolloProfileInfoViewModel.swift */,
+				952470DD2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift */,
+				95AD0BAF2C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift */,
+				95AD0BB12C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift */,
+				37C71C6355BD7787BAE42739 /* ApolloUniversitiesScreenHeaderCellViewModel.swift */,
+				95E579552C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		957D3FE02C10B70F000B5525 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FBA2C10B546000B5525 /* Info.plist */,
+				957D3FB52C10B546000B5525 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		957D3FE12C10B71F000B5525 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FAE2C10B545000B5525 /* SceneDelegate.swift */,
+				957D3FAC2C10B545000B5525 /* AppDelegate.swift */,
+				9550F75F2C1C010B008CCECB /* main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		957D3FF22C10E13B000B5525 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				952470D62C3AB66800C8B0DA /* Programs */,
+				95AB6C532C37090F00B8BCD9 /* ProfileInfo */,
+				950692D72C2AE8AE00E58AC5 /* UniversityInfo */,
+				950692D22C2AE84200E58AC5 /* OlympiadInfo */,
+				95825AAC2C1488C900886033 /* Main */,
+				95825AAD2C1488E300886033 /* Universities */,
+				95825AAE2C1488ED00886033 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		95825AA92C14815D00886033 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95825AAA2C14817F00886033 /* UIColor+Extensions.swift */,
+				9554AE622C1C9EC200BE3E82 /* UITextField+Combine.swift */,
+				950692DE2C2B519B00E58AC5 /* String+Extensions.swift */,
+				959A923C2C2C4566008D6104 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95825AAC2C1488C900886033 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FE92C10DC5A000B5525 /* ApolloMainViewController.swift */,
+				957D3FF32C10E153000B5525 /* ApolloMainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		95825AAD2C1488E300886033 /* Universities */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FEB2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift */,
+				957D3FF52C10E160000B5525 /* ApolloUniversitiesScreen.swift */,
+			);
+			path = Universities;
+			sourceTree = "<group>";
+		};
+		95825AAE2C1488ED00886033 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FED2C10DC88000B5525 /* ApolloSettingsViewController.swift */,
+				957D3FF72C10E172000B5525 /* ApolloSettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		95825AAF2C14894F00886033 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FE72C10D9E9000B5525 /* ApolloNavigationController.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		95825AB02C14895E00886033 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FE22C10B988000B5525 /* ApolloTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		95825AB12C14896A00886033 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				9518CD2E2C11DED3005EC560 /* ApolloSearchController.swift */,
+				95C0D61E2C2057A10031D198 /* ApolloSearchView.swift */,
+				95C0D6222C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift */,
+				9557ED1B2C21A840009F0F98 /* ApolloEmptyStateView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		95825AB22C1489D600886033 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				957D3FE52C10C9A0000B5525 /* ApolloResources.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		959A92352C2C3857008D6104 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				959A92382C2C3891008D6104 /* Layouts */,
+				959A92362C2C3886008D6104 /* ApolloProfilesCollectionView.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		959A92382C2C3891008D6104 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				959A92392C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		959A923E2C2C59C4008D6104 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				959A923F2C2C5A1F008D6104 /* ApolloOlympiadBenefitView.swift */,
+				952470DF2C3ACEF800C8B0DA /* ApolloProfileConditionView.swift */,
+				37C715E8626C01FAA7119E45 /* ApolloUniversitiesScreenHeaderCollectionCell.swift */,
+				37C71D69DCEBCBF31BECF334 /* ApolloTableViewSectionFooterWithTextField.swift */,
+				37C7185EF7B4E91EA40754CF /* ApolloStretchyTableHeaderView.swift */,
+				37C71744E7E830ED09FCCF11 /* ApolloSocialLinkCell.swift */,
+				37C717A58A0C1422107F03FB /* ApolloLocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95AB6C532C37090F00B8BCD9 /* ProfileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				95AB6C542C37093700B8BCD9 /* ApolloProfileInfoViewController.swift */,
+				95AB6C562C37094700B8BCD9 /* ApolloProfileInfoView.swift */,
+			);
+			path = ProfileInfo;
+			sourceTree = "<group>";
+		};
+		95C0D6262C20B4B50031D198 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				95C0D6272C20B4D80031D198 /* ApolloMainScreenSearchButton.swift */,
+				957DE9E72C2C9A63009AD77E /* ApolloButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		957D3FA82C10B545000B5525 /* Apollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957D3FD32C10B546000B5525 /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildPhases = (
+				957D3FA52C10B545000B5525 /* Sources */,
+				957D3FA62C10B545000B5525 /* Frameworks */,
+				957D3FA72C10B545000B5525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apollo;
+			productName = Apollo;
+			productReference = 957D3FA92C10B545000B5525 /* Apollo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		957D3FBE2C10B546000B5525 /* ApolloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957D3FD62C10B546000B5525 /* Build configuration list for PBXNativeTarget "ApolloTests" */;
+			buildPhases = (
+				957D3FBB2C10B546000B5525 /* Sources */,
+				957D3FBC2C10B546000B5525 /* Frameworks */,
+				957D3FBD2C10B546000B5525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				957D3FC12C10B546000B5525 /* PBXTargetDependency */,
+			);
+			name = ApolloTests;
+			productName = ApolloTests;
+			productReference = 957D3FBF2C10B546000B5525 /* ApolloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		957D3FC82C10B546000B5525 /* ApolloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957D3FD92C10B546000B5525 /* Build configuration list for PBXNativeTarget "ApolloUITests" */;
+			buildPhases = (
+				957D3FC52C10B546000B5525 /* Sources */,
+				957D3FC62C10B546000B5525 /* Frameworks */,
+				957D3FC72C10B546000B5525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				957D3FCB2C10B546000B5525 /* PBXTargetDependency */,
+			);
+			name = ApolloUITests;
+			productName = ApolloUITests;
+			productReference = 957D3FC92C10B546000B5525 /* ApolloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		957D3FA12C10B545000B5525 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					957D3FA82C10B545000B5525 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					957D3FBE2C10B546000B5525 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 957D3FA82C10B545000B5525;
+					};
+					957D3FC82C10B546000B5525 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 957D3FA82C10B545000B5525;
+					};
+				};
+			};
+			buildConfigurationList = 957D3FA42C10B545000B5525 /* Build configuration list for PBXProject "Apollo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 957D3FA02C10B545000B5525;
+			productRefGroup = 957D3FAA2C10B545000B5525 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				957D3FA82C10B545000B5525 /* Apollo */,
+				957D3FBE2C10B546000B5525 /* ApolloTests */,
+				957D3FC82C10B546000B5525 /* ApolloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		957D3FA72C10B545000B5525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957D3FB62C10B546000B5525 /* Assets.xcassets in Resources */,
+				957D3FB92C10B546000B5525 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FBD2C10B546000B5525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FC72C10B546000B5525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		957D3FA52C10B545000B5525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959A92372C2C3886008D6104 /* ApolloProfilesCollectionView.swift in Sources */,
+				95AB6C552C37093700B8BCD9 /* ApolloProfileInfoViewController.swift in Sources */,
+				950692DD2C2AFEE100E58AC5 /* ShortOlympiadInfo.swift in Sources */,
+				9554AE712C1CB84E00BE3E82 /* Faculty.swift in Sources */,
+				957D3FEA2C10DC5A000B5525 /* ApolloMainViewController.swift in Sources */,
+				957D3FF42C10E154000B5525 /* ApolloMainScreen.swift in Sources */,
+				95CC71DA2C39603F00090174 /* ApolloProfileInfoViewModel.swift in Sources */,
+				9557ED222C21D479009F0F98 /* ApolloOlympiadResultCell.swift in Sources */,
+				95AD0BB02C47DE71007B19C6 /* ApolloUniversityResultViewModel.swift in Sources */,
+				957D3FE62C10C9A0000B5525 /* ApolloResources.swift in Sources */,
+				95825AAB2C14817F00886033 /* UIColor+Extensions.swift in Sources */,
+				957D3FAD2C10B545000B5525 /* AppDelegate.swift in Sources */,
+				9554AE6F2C1CB71800BE3E82 /* University.swift in Sources */,
+				9557ED1C2C21A840009F0F98 /* ApolloEmptyStateView.swift in Sources */,
+				959A92402C2C5A1F008D6104 /* ApolloOlympiadBenefitView.swift in Sources */,
+				959A923A2C2C38BA008D6104 /* ApolloProfilesCollectionViewFlowLayout.swift in Sources */,
+				95C0D6282C20B4D80031D198 /* ApolloMainScreenSearchButton.swift in Sources */,
+				950692D62C2AE8A900E58AC5 /* ApolloOlympiadInfoView.swift in Sources */,
+				950692DF2C2B519B00E58AC5 /* String+Extensions.swift in Sources */,
+				95AB6C572C37094700B8BCD9 /* ApolloProfileInfoView.swift in Sources */,
+				959A923D2C2C4566008D6104 /* UIImage+Extensions.swift in Sources */,
+				9518CD2F2C11DED3005EC560 /* ApolloSearchController.swift in Sources */,
+				950692D92C2AE8D400E58AC5 /* ApolloUniversityInfoView.swift in Sources */,
+				957D3FE32C10B988000B5525 /* ApolloTabBarController.swift in Sources */,
+				957D3FEE2C10DC88000B5525 /* ApolloSettingsViewController.swift in Sources */,
+				95C0D61F2C2057A10031D198 /* ApolloSearchView.swift in Sources */,
+				95AB6C5B2C37FB8A00B8BCD9 /* ApolloTitleCell.swift in Sources */,
+				95E579562C5191EB00E4DF1C /* ApolloUniversityInfoViewModel.swift in Sources */,
+				950692D42C2AE89700E58AC5 /* ApolloOlympiadInfoViewController.swift in Sources */,
+				957DE9E62C2C807A009AD77E /* ProfileData.swift in Sources */,
+				9554AE632C1C9EC200BE3E82 /* UITextField+Combine.swift in Sources */,
+				9557ED202C21D463009F0F98 /* ApolloUniversityResultCell.swift in Sources */,
+				957D3FF62C10E160000B5525 /* ApolloUniversitiesScreen.swift in Sources */,
+				952470DC2C3ABAF000C8B0DA /* ApolloProgramCell.swift in Sources */,
+				957D3FAF2C10B545000B5525 /* SceneDelegate.swift in Sources */,
+				957DE9E82C2C9A63009AD77E /* ApolloButton.swift in Sources */,
+				952470E02C3ACEF800C8B0DA /* ApolloProfileConditionView.swift in Sources */,
+				9554AE6D2C1CB5EA00BE3E82 /* Olympiad.swift in Sources */,
+				95C0D6212C2057E80031D198 /* ApolloSearchViewModel.swift in Sources */,
+				95AB6C592C3709E700B8BCD9 /* ApolloGeneralLeftCell.swift in Sources */,
+				950692DB2C2AE8E300E58AC5 /* ApolloUniversityInfoViewController.swift in Sources */,
+				9554AE662C1CA32C00BE3E82 /* ApolloAPIService.swift in Sources */,
+				95AD0BB22C483018007B19C6 /* ApolloUniversitiesScreenViewModel.swift in Sources */,
+				952470D82C3AB69100C8B0DA /* ApolloProgramsViewController.swift in Sources */,
+				957DE9E42C2C7FE4009AD77E /* ApolloProfileCell.swift in Sources */,
+				95D776F52C29A41000506B33 /* GroupedOlympiad.swift in Sources */,
+				952470DE2C3ABBC700C8B0DA /* ApolloProgramCellViewModel.swift in Sources */,
+				95CC71DC2C3987A700090174 /* ApolloUniversityCell.swift in Sources */,
+				95A5346D2C233BDD00306276 /* ApolloUniversityCellViewModel.swift in Sources */,
+				9550F7602C1C010B008CCECB /* main.swift in Sources */,
+				957D3FE82C10D9E9000B5525 /* ApolloNavigationController.swift in Sources */,
+				957D3FEC2C10DC7C000B5525 /* ApolloUniversitiesViewController.swift in Sources */,
+				95C0D6232C205D330031D198 /* ApolloSearchEditingOverlayGestureView.swift in Sources */,
+				952470DA2C3AB6A000C8B0DA /* ApolloProgramsView.swift in Sources */,
+				957D3FF82C10E172000B5525 /* ApolloSettingsScreen.swift in Sources */,
+				37C7124A548CC37F6517DE6D /* ApolloUniversitiesScreenHeaderCell.swift in Sources */,
+				37C710EDC79854F0F0DB4A49 /* ApolloUniversitiesScreenHeaderCellViewModel.swift in Sources */,
+				37C715C48ABDD8DC850C4C6A /* ApolloUniversitiesScreenHeaderCollectionCell.swift in Sources */,
+				37C71F9C7822B63707CA9749 /* ApolloTableViewSectionFooterWithTextField.swift in Sources */,
+				37C71E9C77EC6E9AD3EFE803 /* ApolloStretchyTableHeaderView.swift in Sources */,
+				37C7146A923D66466372A9BC /* ApolloUniversityTitleWithYearOfFoundationCell.swift in Sources */,
+				37C7180D6AF73D726EA9E68A /* ApolloButtonCell.swift in Sources */,
+				37C719186FDD222F928745FD /* ApolloContactInfoCell.swift in Sources */,
+				37C71461EB452747D9F64A7C /* ApolloSocialLinkCell.swift in Sources */,
+				37C712282A2B8AFCEFE9BBD1 /* ApolloUniversityAddressCell.swift in Sources */,
+				37C715A429A27E54F6AEFABB /* ApolloLocationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FBB2C10B546000B5525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554AE732C1CC5C400BE3E82 /* ApolloAPIServiceTests.swift in Sources */,
+				9550F75E2C1C00A1008CCECB /* TestingAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957D3FC52C10B546000B5525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957D3FCE2C10B546000B5525 /* ApolloUITests.swift in Sources */,
+				957D3FD02C10B546000B5525 /* ApolloUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		957D3FC12C10B546000B5525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 957D3FA82C10B545000B5525 /* Apollo */;
+			targetProxy = 957D3FC02C10B546000B5525 /* PBXContainerItemProxy */;
+		};
+		957D3FCB2C10B546000B5525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 957D3FA82C10B545000B5525 /* Apollo */;
+			targetProxy = 957D3FCA2C10B546000B5525 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		957D3FB72C10B546000B5525 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				957D3FB82C10B546000B5525 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		957D3FD12C10B546000B5525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		957D3FD22C10B546000B5525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		957D3FD42C10B546000B5525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Apollo/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.Apollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		957D3FD52C10B546000B5525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Apollo/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.Apollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		957D3FD72C10B546000B5525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.ApolloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apollo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Apollo";
+			};
+			name = Debug;
+		};
+		957D3FD82C10B546000B5525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.ApolloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apollo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Apollo";
+			};
+			name = Release;
+		};
+		957D3FDA2C10B546000B5525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.ApolloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Apollo;
+			};
+			name = Debug;
+		};
+		957D3FDB2C10B546000B5525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXWB9U632D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dr.erast.ApolloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Apollo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		957D3FA42C10B545000B5525 /* Build configuration list for PBXProject "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957D3FD12C10B546000B5525 /* Debug */,
+				957D3FD22C10B546000B5525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957D3FD32C10B546000B5525 /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957D3FD42C10B546000B5525 /* Debug */,
+				957D3FD52C10B546000B5525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957D3FD62C10B546000B5525 /* Build configuration list for PBXNativeTarget "ApolloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957D3FD72C10B546000B5525 /* Debug */,
+				957D3FD82C10B546000B5525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957D3FD92C10B546000B5525 /* Build configuration list for PBXNativeTarget "ApolloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957D3FDA2C10B546000B5525 /* Debug */,
+				957D3FDB2C10B546000B5525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 957D3FA12C10B545000B5525 /* Project object */;
+}

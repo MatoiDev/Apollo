@@ -38,7 +38,9 @@ final class ApolloProfileCell: UICollectionViewCell {
     }
 }
 
+
 private extension ApolloProfileCell {
+    
     func configure() -> Void {
         clipsToBounds = true
         backgroundColor = .apolloCellBackgroundColor
@@ -66,7 +68,6 @@ private extension ApolloProfileCell {
         universitiesLabel.textColor = .secondaryLabel
         universitiesLabel.font = .systemFont(ofSize: 12.0, weight: .medium)
         universitiesLabel.numberOfLines = 1
-
     
         contentView.addSubview(universitiesLabel)
         NSLayoutConstraint.activate([
@@ -81,7 +82,6 @@ private extension ApolloProfileCell {
         specialitiesLabel.textColor = .secondaryLabel
         specialitiesLabel.font = .systemFont(ofSize: 12.0, weight: .medium)
         specialitiesLabel.numberOfLines = 1
-        
     
         contentView.addSubview(specialitiesLabel)
         NSLayoutConstraint.activate([

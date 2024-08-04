@@ -7,10 +7,12 @@
 
 import Foundation
 
+
 struct UniversityLocation: Decodable {
     var latitude: Double
     let longitude: Double
 }
+
 
 struct UniversityAddress: Decodable {
     let street: String
@@ -21,12 +23,14 @@ struct UniversityAddress: Decodable {
     let location: UniversityLocation
 }
 
+
 struct UniversityContactLinks: Decodable {
     let vk: String?
     let telegram: String?
     let ok: String?
     let youtube: String?
 }
+
 
 struct University: Decodable {
     let id: String

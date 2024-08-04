@@ -11,6 +11,7 @@ import Combine
 
 final class ApolloProfileInfoViewModel {
     
+    // Properties
     private let service: ApolloAPIServiceStandart
     
     // Publishers

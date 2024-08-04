@@ -14,13 +14,16 @@ protocol ApolloAPIServiceStandart {
     func fetchImage(usingURL url: String?) async throws -> UIImage
 }
 
+
 extension ApolloAPIServiceStandart {
     var temporaryHostingURL: String {
         "https://matoidev.pythonanywhere.com"
     }
 }
 
+
 actor ApolloAPIService: ApolloAPIServiceStandart {
+    
     private var rawDataCache: Dictionary<URL, LoadingState> = [:]
     private let imageCache = NSCache<NSString, UIImage>()
     private let decoder: JSONDecoder = JSONDecoder()
@@ -88,6 +91,7 @@ actor ApolloAPIService: ApolloAPIServiceStandart {
         }
     }
 }
+
 
 extension ApolloAPIService {
     enum LoadingState {

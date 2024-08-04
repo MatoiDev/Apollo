@@ -8,7 +8,13 @@
 import Foundation
 import Combine
 
+
 final class ApolloSearchViewModel {
+    
+    // Properties
+    private var service: ApolloAPIServiceStandart
+    
+    // Publishers
     @Published var errorLog: String? = nil
     @Published var fetched: (olympiads: [GroupedOlympiad], universities: [University]) = ([], [])
     @Published var searchText: String = "" {
@@ -25,8 +31,6 @@ final class ApolloSearchViewModel {
             errorLog = nil
         }
     }
-    
-    private var service: ApolloAPIServiceStandart!
     
     init(withService service: ApolloAPIServiceStandart) {
         self.service = service

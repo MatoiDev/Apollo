@@ -7,8 +7,10 @@
 
 import UIKit
 
+
 final class ApolloMainScreenSearchButton: UIButton {
     
+    // Elements
     private let primaryLabel: UILabel = UILabel()
     private let secondaryLabel: UILabel = UILabel()
     private let leadingImageView: UIImageView = UIImageView()
@@ -39,6 +41,7 @@ final class ApolloMainScreenSearchButton: UIButton {
 
 
 private extension ApolloMainScreenSearchButton {
+    
     func configureLeadingImageView() -> Void {
         leadingImageView.translatesAutoresizingMaskIntoConstraints = false
         leadingImageView.image = ApolloResources.Images.MainView.searchFieldLeadingImage

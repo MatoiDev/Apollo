@@ -10,6 +10,7 @@ import UIKit
 
 final class ApolloOlympiadInfoView: UIScrollView {
     
+    // Properties
     let olympiad: GroupedOlympiad
     
     // Elements
@@ -42,6 +43,7 @@ final class ApolloOlympiadInfoView: UIScrollView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 
 private extension ApolloOlympiadInfoView {
     
@@ -161,6 +163,7 @@ private extension ApolloOlympiadInfoView {
     }
 }
 
+
 extension ApolloOlympiadInfoView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -178,6 +181,7 @@ extension ApolloOlympiadInfoView: UICollectionViewDataSource {
         return cell
     }
 }
+
 
 extension ApolloOlympiadInfoView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

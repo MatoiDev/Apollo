@@ -7,9 +7,11 @@
 
 import UIKit
 
+
 protocol ApolloProfileInfoViewControllerPresenter: AnyObject {
     func present(with profiles: [String]) -> Void
 }
+
 
 final class ApolloProfileInfoViewController: UIViewController {
     
@@ -33,7 +35,9 @@ final class ApolloProfileInfoViewController: UIViewController {
     }
 }
 
+
 private extension ApolloProfileInfoViewController {
+    
     func setupView() -> Void {
         let service: ApolloAPIService = ApolloAPIService.shared
         let viewModel: ApolloProfileInfoViewModel = ApolloProfileInfoViewModel(service: service)
@@ -46,8 +50,9 @@ private extension ApolloProfileInfoViewController {
 }
 
 extension ApolloProfileInfoViewController: ApolloProfileInfoViewControllerPresenter {
+    
     func present(with profiles: [String]) {
-        let vc: ApolloProgramsViewController = ApolloProgramsViewController(profiles: profiles)
+        let vc: ApolloProgramsWithConditionViewController = ApolloProgramsWithConditionViewController(profiles: profiles)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
